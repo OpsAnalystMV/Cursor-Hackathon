@@ -68,10 +68,39 @@ type FixtureCase = {
   };
 };
 
+type DemoCase = {
+  workerId: string;
+  asOf: string;
+  dayRate: number;
+  floorDayNet: number;
+  freeBalance30: number;
+  todaySplit: {
+    netEarned: number;
+    committed: number;
+    buffer: number;
+    yours: number;
+    earnedNotYetPaid: number;
+  };
+  cliffReadiness: {
+    cliffDate: string;
+    cliffAmount: number;
+    daysAway: number;
+    obligationsBefore: number;
+    availableAtCliff: number;
+    gap: number;
+    shiftsNeeded: number;
+    shiftsExpected: number;
+  };
+};
+
 type Fixtures = {
   cases: FixtureCase[];
   population: Record<string, number | string>;
   negativeResult: Record<string, number | string>;
+  demoCases: {
+    didNotWork: DemoCase;
+    stressedButClosable: DemoCase;
+  };
 };
 
 const fixtures: Fixtures = JSON.parse(
@@ -319,4 +348,125 @@ describe("lib/pace against fixtures.json", () => {
     },
     60_000,
   );
+});
+
+describe("fixtures.json demoCases (end-to-end)", () => {
+  let pace: Pace;
+
+  beforeAll(() => {
+    openDb();
+    pace = createPace(createMemoryStore());
+  });
+
+  afterAll(() => {
+    closeDb();
+  });
+
+  expect(fixtures.demoCases, "demoCases missing from fixtures.json").toBeDefined();
+  expect(fixtures.demoCases.didNotWork).toBeDefined();
+  expect(fixtures.demoCases.stressedButClosable).toBeDefined();
+
+  it("fixtures.json exposes both demo cases", () => {
+    expect(fixtures.demoCases.didNotWork.workerId).toBe("W-0001");
+    expect(fixtures.demoCases.didNotWork.asOf).toBe("2026-04-16");
+    expect(fixtures.demoCases.stressedButClosable.workerId).toBe("W-0035");
+    expect(fixtures.demoCases.stressedButClosable.asOf).toBe("2026-04-20");
+  });
+
+  for (const [name, demo] of Object.entries(fixtures.demoCases) as [
+    string,
+    DemoCase,
+  ][]) {
+    describe(`${name}: ${demo.workerId} @ ${demo.asOf}`, () => {
+      it("dayRate, floorDayNet, freeBalance30", () => {
+        expectClose(
+          pace.dayRate(demo.workerId, demo.asOf),
+          demo.dayRate,
+          CURRENCY,
+          "dayRate",
+        );
+        expectClose(
+          pace.floorDayNet(demo.workerId, demo.asOf),
+          demo.floorDayNet,
+          CURRENCY,
+          "floorDayNet",
+        );
+        expectClose(
+          pace.freeBalance(demo.workerId, demo.asOf, 30),
+          demo.freeBalance30,
+          CURRENCY,
+          "freeBalance30",
+        );
+      });
+
+      it("todaySplit — all five fields", () => {
+        const split = pace.todaySplit(demo.workerId, demo.asOf);
+        expect(split).not.toBeNull();
+        expectClose(
+          split!.netEarned,
+          demo.todaySplit.netEarned,
+          CURRENCY,
+          "netEarned",
+        );
+        expectClose(
+          split!.committed,
+          demo.todaySplit.committed,
+          CURRENCY,
+          "committed",
+        );
+        expectClose(
+          split!.buffer,
+          demo.todaySplit.buffer,
+          CURRENCY,
+          "buffer",
+        );
+        expectClose(split!.yours, demo.todaySplit.yours, CURRENCY, "yours");
+        expectClose(
+          split!.earnedNotYetPaid,
+          demo.todaySplit.earnedNotYetPaid,
+          CURRENCY,
+          "earnedNotYetPaid",
+        );
+        expectClose(
+          round2(split!.committed + split!.buffer + split!.yours),
+          split!.netEarned,
+          CURRENCY,
+          "split sum invariant",
+        );
+      });
+
+      it("cliffReadiness — every field", () => {
+        const ready = pace.cliffReadiness(demo.workerId, demo.asOf);
+        expect(ready).not.toBeNull();
+        expect(ready!.cliffDate).toBe(demo.cliffReadiness.cliffDate);
+        expectClose(
+          ready!.cliffAmount,
+          demo.cliffReadiness.cliffAmount,
+          CURRENCY,
+          "cliffAmount",
+        );
+        expect(ready!.daysAway).toBe(demo.cliffReadiness.daysAway);
+        expectClose(
+          ready!.obligationsBefore,
+          demo.cliffReadiness.obligationsBefore,
+          CURRENCY,
+          "obligationsBefore",
+        );
+        expectClose(
+          ready!.availableAtCliff,
+          demo.cliffReadiness.availableAtCliff,
+          CURRENCY,
+          "availableAtCliff",
+        );
+        expectClose(ready!.gap, demo.cliffReadiness.gap, CURRENCY, "gap");
+        expect(ready!.shiftsNeeded).toBe(demo.cliffReadiness.shiftsNeeded);
+        expectClose(
+          ready!.shiftsExpected,
+          demo.cliffReadiness.shiftsExpected,
+          RATIO,
+          "shiftsExpected",
+        );
+      });
+    });
+  }
 });
