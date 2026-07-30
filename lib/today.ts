@@ -3,8 +3,8 @@ import { openDb, getWorker } from "@/lib/db";
 import { createPace } from "@/lib/pace";
 import { createMemoryStore } from "@/lib/store";
 
-export const DEFAULT_WORKER = "W-0001";
-export const DEFAULT_DATE = "2026-04-16";
+export const DEFAULT_WORKER = "W-0035";
+export const DEFAULT_DATE = "2026-04-20";
 
 export type TodayView = {
   workerId: string;
