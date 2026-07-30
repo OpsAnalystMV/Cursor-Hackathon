@@ -6,15 +6,17 @@ alwaysApply: true
 
 # Pace hard constraints
 
-- Never read `buffer_days_estimate`. It is corrupt.
-- Never forecast from a mean. Use `floorDayNet` (p20).
-- Never display a raw account balance in the user-facing UI.
-- Never express a cost as an APR in the UI. Work-minutes or dollars only.
-- Never use the advances table as a model input — it is the evaluation target.
+- Pace is an accounting reframe, not a forecaster. Never build a predictive model, risk score, propensity flag, or "likely to need an advance" indicator. Advance events in this dataset are statistically independent of cashflow state (`fixtures.json` → `negativeResult`).
+- Never generate, synthesize, mock, or fabricate data in `/data`. If the dataset is absent or a hash mismatches `data_manifest.json`, stop and report — SPEC.md numbers are only meaningful against the canonical files.
+- Never edit `fixtures.json` or `data_manifest.json` to make a test pass. If output disagrees with fixtures, the implementation is wrong.
+- Never read `weekly_cashflow_summary.buffer_days_estimate`. It is corrupt.
+- Never use a mean for income. `floorDayNet` (p20) only.
+- Never display `latestBalance` in user-facing UI. `freeBalance` is the number.
+- Never express cost as an APR in the UI. Work-minutes or dollars only.
+- Never use `earned_wage_advances` as an input to anything the UI shows. It is historical record only.
 - Exclude `status='cancelled'` advances everywhere.
-- Round every displayed number. Currency to whole dollars above $10, two decimals below.
-- If a computation lacks enough history, return `null` and render an explicit empty state. Do not substitute a default and carry on silently.
-- Handle both `monthly` and `biweekly` frequencies on `recurring_obligations`. A naive `due_day_of_month` match silently drops the 38 biweekly rows.
-- Do not start a build phase before the previous one passes. Phase order is seed → math+tests → backtest → screens.
-- Never show a raw balance. Show what is committed, what is free, and whether today cleared its share.
-- Never generate, synthesize, mock, or fabricate data in `/data`. The figures in SPEC.md are derived from a specific canonical dataset and are only meaningful against those files. `scripts/seed.ts` must verify sha256 hashes from `data_manifest.json` before loading. If `/data` is absent or any hash mismatches, stop and report — do not regenerate, do not proceed with a substitute.
+- Handle both `monthly` and `biweekly` frequencies on `recurring_obligations`. Biweekly anchor = first date on or after `2026-04-01` with matching `due_day_of_month`, then every 14 days.
+- Round every displayed number. Whole dollars above $10, two decimals below.
+- If a computation returns `null` for insufficient history, render an explicit empty state naming what is missing. Never substitute a default silently.
+- Phrase anything derived from `dowWorkProbability` in the past tense. It describes history.
+- Do not start a build phase before the previous one passes.
