@@ -34,11 +34,17 @@ type FixturesShape = {
     crossSectionLift: number;
     conclusion: string;
   };
-  coverage?: {
-    workerDatesSampled?: number;
-    shareAnyCondition?: number;
-    shareWorkersEverTriggered?: number;
-    note?: string;
+  coverage: {
+    note: string;
+    sampleDates: string[];
+    workerDatesSampled: number;
+    workersTotal: number;
+    workersTriggeringAnyCondition: number;
+    conditionRates: {
+      freeBalanceNegative: number;
+      floorBelowDayRate: number;
+      cliffGapPositive: number;
+    };
   };
 };
 
@@ -47,11 +53,16 @@ function loadFixtures(): FixturesShape {
   return JSON.parse(fs.readFileSync(p, "utf8")) as FixturesShape;
 }
 
+function pct(rate: number): string {
+  return `${(rate * 100).toFixed(rate * 100 >= 10 ? 0 : 1)}%`;
+}
+
 export default function ProofPage() {
   const fixtures = loadFixtures();
   const nr = fixtures.negativeResult;
   const pop = fixtures.population;
   const coverage = fixtures.coverage;
+  const rates = coverage.conditionRates;
 
   return (
     <AppShell showPickers={false}>
@@ -169,36 +180,48 @@ export default function ProofPage() {
           <h2 className="font-[family-name:var(--font-display)] text-xl">
             Honesty about coverage
           </h2>
-          {coverage ? (
-            <p className="text-sm leading-relaxed text-[var(--muted)]">
-              {coverage.note ??
-                "Most workers are fine on most days."}
-              {coverage.shareAnyCondition != null && (
-                <>
-                  {" "}
-                  Conditions fire on roughly{" "}
-                  {Math.round(coverage.shareAnyCondition * 100)}% of sampled
-                  worker-dates
-                </>
-              )}
-              {coverage.shareWorkersEverTriggered != null && (
-                <>
-                  ; about{" "}
-                  {Math.round(coverage.shareWorkersEverTriggered * 100)}% of
-                  workers trigger at least one at least once
-                </>
-              )}
-              .
-            </p>
-          ) : (
-            <p className="text-sm leading-relaxed text-[var(--muted)]">
-              Most workers are fine on most days.{" "}
-              {pop.countFreeBalanceNegative} of {pop.n} show a negative free
-              balance on the snapshot date — a minority, not everyone. A picker
-              that implies every worker is in trouble is the same overreach as
-              the predictive model.
-            </p>
-          )}
+          <p className="text-sm leading-relaxed text-[var(--ink)]">
+            Most workers are fine on most days.
+          </p>
+          <p className="text-sm leading-relaxed text-[var(--muted)]">
+            {coverage.note} Sampled{" "}
+            <span className="font-medium text-[var(--ink)]">
+              {coverage.workerDatesSampled}
+            </span>{" "}
+            worker-dates ({coverage.workersTotal} workers ×{" "}
+            {coverage.sampleDates.length} dates).
+          </p>
+          <ul className="space-y-2 text-sm leading-relaxed text-[var(--ink)]">
+            <li>
+              Free balance negative:{" "}
+              <span className="font-semibold">
+                {pct(rates.freeBalanceNegative)}
+              </span>{" "}
+              of worker-dates
+            </li>
+            <li>
+              Floor day net below day rate:{" "}
+              <span className="font-semibold">
+                {pct(rates.floorBelowDayRate)}
+              </span>{" "}
+              of worker-dates
+            </li>
+            <li>
+              Cliff gap positive:{" "}
+              <span className="font-semibold">
+                {pct(rates.cliffGapPositive)}
+              </span>{" "}
+              of worker-dates
+            </li>
+          </ul>
+          <p className="text-sm leading-relaxed text-[var(--muted)]">
+            <span className="font-semibold text-[var(--ink)]">
+              {coverage.workersTriggeringAnyCondition}
+            </span>{" "}
+            of {coverage.workersTotal} workers trigger at least one condition at
+            least once. A picker that implies every worker is in trouble is the
+            same overreach as the predictive model.
+          </p>
         </section>
       </article>
     </AppShell>
