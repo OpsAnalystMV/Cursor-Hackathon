@@ -24,7 +24,7 @@ export function SplitBar({ committed, buffer, yours }: SplitBarProps) {
             : `Committed ${committed}, buffer ${buffer}, yours ${yours}`
         }
       >
-        <rect x="0" y="4" width="320" height="20" rx="4" fill="#d4ccbc" />
+        <rect x="0" y="4" width="320" height="20" rx="3" fill="#c5d3da" />
         {!empty && (
           <>
             <rect
@@ -32,23 +32,23 @@ export function SplitBar({ committed, buffer, yours }: SplitBarProps) {
               y="4"
               width={(320 * c) / 100}
               height="20"
-              rx="4"
-              fill="#0f6b5c"
+              rx="3"
+              fill="#0c6e6a"
             />
             <rect
               x={(320 * c) / 100}
               y="4"
               width={(320 * b) / 100}
               height="20"
-              fill="#c4a35a"
+              fill="#b08a3a"
             />
             <rect
               x={(320 * (c + b)) / 100}
               y="4"
               width={(320 * y) / 100}
               height="20"
-              rx="4"
-              fill="#2f6f9f"
+              rx="3"
+              fill="#2a6f97"
             />
           </>
         )}
