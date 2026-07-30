@@ -6,9 +6,9 @@ Cashflow tool for people who earn daily and get billed monthly.
 
 ## Phase status
 
-1. **Seed** — done (`npm run seed`, sha256 + content assertions)
+1. **Seed** — done (`npm run seed`)
 2. **Math + tests** — done (`npm test`, all 8 `fixtures.json` cases)
-3. Screens — not started
+3. **Screens** — Today, Pace, Solve, Proof + worker/date pickers
 
 ## Commands
 
@@ -16,7 +16,10 @@ Cashflow tool for people who earn daily and get billed monthly.
 npm install
 npm run seed
 npm test
+npm run dev
 ```
+
+Default demo: **W-0035** as of **2026-04-20** (stressed but closable). Case 1 didn’t-work state: `/?worker=W-0001&date=2026-04-16`.
 
 ## Spec
 

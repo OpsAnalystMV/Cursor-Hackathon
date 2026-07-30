@@ -1,17 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --ink: #1a2a24;
-  --muted: #5c6b64;
-  --paper: #f3efe6;
-  --paper-2: #e7e0d2;
-  --sea: #0f6b5c;
-  --sea-deep: #0a4a40;
-  --committed: #0f6b5c;
-  --buffer: #c4a35a;
-  --yours: #2f6f9f;
-  --line: #d4ccbc;
+  --ink: #12222a;
+  --muted: #5a6d76;
+  --paper: #e6eef2;
+  --paper-2: #d5e2e8;
+  --surface: #f4f8fa;
+  --sea: #0c6e6a;
+  --sea-deep: #084e4b;
+  --committed: #0c6e6a;
+  --buffer: #b08a3a;
+  --yours: #2a6f97;
+  --line: #c5d3da;
   --danger: #9b3d2e;
+  --earn-bar: #7aa8b8;
+  --bill-bar: #0c6e6a;
 }
 
 @theme inline {
@@ -27,9 +30,42 @@
 
 body {
   background:
-    radial-gradient(ellipse 120% 80% at 10% -10%, #dfece7 0%, transparent 55%),
-    radial-gradient(ellipse 90% 60% at 100% 0%, #efe6d4 0%, transparent 50%),
-    var(--paper);
+    radial-gradient(ellipse 110% 70% at 0% -5%, #c8dde6 0%, transparent 50%),
+    radial-gradient(ellipse 80% 50% at 100% 0%, #d5ebe6 0%, transparent 45%),
+    linear-gradient(180deg, #eaf2f5 0%, var(--paper) 40%, #dfe9ee 100%);
   color: var(--ink);
   min-height: 100vh;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bar-grow {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.55s ease-out both;
+}
+
+.animate-fade-up-delay {
+  animation: fade-up 0.65s ease-out 0.12s both;
+}
+
+.chart-bar {
+  transform-origin: bottom;
+  animation: bar-grow 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
