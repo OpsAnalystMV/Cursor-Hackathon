@@ -18,15 +18,17 @@ export function CliffChart({ days, dayRate, yMax, cliffDate }: Props) {
   const padB = 28;
   const plotW = W - padL - padR;
   const plotH = H - padT - padB;
-  const n = days.length;
-  const gap = 0.35;
+  // Drop zero-height days so $160 earns sit next to the cliff on one scale.
+  const visible = days.filter((d) => d.amount > 0);
+  const n = visible.length;
+  const gap = 0.28;
   const slot = plotW / Math.max(n, 1);
-  const barW = Math.max(1.2, slot * (1 - gap));
+  const barW = Math.max(2, slot * (1 - gap));
 
   const yScale = (v: number) => padT + plotH - (v / yMax) * plotH;
   const rateY = yScale(dayRate);
 
-  const todayIdx = days.findIndex((d) => !d.past);
+  const todayIdx = visible.findIndex((d) => !d.past);
   const dividerX =
     todayIdx >= 0 ? padL + todayIdx * slot : padL + plotW * 0.5;
 
@@ -76,8 +78,7 @@ export function CliffChart({ days, dayRate, yMax, cliffDate }: Props) {
         ahead
       </text>
 
-      {days.map((d, i) => {
-        if (d.amount <= 0) return null;
+      {visible.map((d, i) => {
         const x = padL + i * slot + (slot - barW) / 2;
         const y = yScale(d.amount);
         const h = padT + plotH - y;
@@ -91,7 +92,7 @@ export function CliffChart({ days, dayRate, yMax, cliffDate }: Props) {
           <rect
             key={`${d.date}-${i}`}
             className="chart-bar"
-            style={{ animationDelay: `${Math.min(i, 40) * 8}ms` }}
+            style={{ animationDelay: `${Math.min(i, 40) * 12}ms` }}
             x={x}
             y={y}
             width={barW}

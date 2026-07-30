@@ -25,7 +25,7 @@ export function formatShifts(n: number): string {
 }
 
 export function formatDateShort(iso: string): string {
-  const [y, m, d] = iso.split("-").map(Number);
+  const [, m, d] = iso.split("-").map(Number);
   const months = [
     "Jan",
     "Feb",
