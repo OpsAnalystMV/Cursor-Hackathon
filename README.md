@@ -10,13 +10,15 @@ Next.js 15 (App Router, TypeScript strict) · Tailwind · better-sqlite3 · vite
 
 ## Phase 1 — seed
 
+Canonical CSVs live in `/data`. Hashes and content assertions live in `data_manifest.json`.
+
 ```bash
 npm install
-# CSVs live in /data (regenerate with: python3 scripts/generate_data.py)
-npm run seed
+npm run seed   # verifies sha256, loads SQLite, asserts content sums
+npm test       # includes scripts/seed.test.ts hash checks (CI)
 ```
 
-Asserts exact row counts from `SPEC.md` §3. Fails loudly on mismatch.
+If `/data` is missing or a hash mismatches, seed aborts. Do not generate replacements.
 
 ## Spec
 

@@ -17,3 +17,4 @@ alwaysApply: true
 - Handle both `monthly` and `biweekly` frequencies on `recurring_obligations`. A naive `due_day_of_month` match silently drops the 38 biweekly rows.
 - Do not start a build phase before the previous one passes. Phase order is seed → math+tests → backtest → screens.
 - Never show a raw balance. Show what is committed, what is free, and whether today cleared its share.
+- Never generate, synthesize, mock, or fabricate data in `/data`. The figures in SPEC.md are derived from a specific canonical dataset and are only meaningful against those files. `scripts/seed.ts` must verify sha256 hashes from `data_manifest.json` before loading. If `/data` is absent or any hash mismatches, stop and report — do not regenerate, do not proceed with a substitute.

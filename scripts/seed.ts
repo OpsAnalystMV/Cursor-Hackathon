@@ -1,26 +1,33 @@
 /**
- * Phase 1 seed: load the six CSVs from /data into SQLite verbatim.
- * Asserts exact row counts from SPEC §3 / §9. Fails loudly on mismatch.
+ * Phase 1 seed: verify canonical hashes, load /data CSVs into SQLite, assert
+ * row counts and content_assertions from data_manifest.json.
  *
  * Never reads buffer_days_estimate for product logic — the column is loaded
  * for fidelity to the CSV contract only.
+ *
+ * Never generate / synthesize /data. Missing or mismatched files abort the seed.
  */
 import fs from "node:fs";
 import path from "node:path";
 import Database from "better-sqlite3";
 import { parse } from "csv-parse/sync";
+import {
+  DATA_DIR,
+  assertCanonicalHashes,
+  loadManifest,
+  round2,
+  type DataManifest,
+} from "./data-integrity";
 
-const ROOT = path.resolve(__dirname, "..");
-const DATA_DIR = path.join(ROOT, "data");
 const DB_PATH = path.join(DATA_DIR, "pace.db");
 
-const EXPECTED: Record<string, number> = {
-  workers: 220,
-  daily_earnings: 12204,
-  recurring_obligations: 849,
-  transactions: 31726,
-  earned_wage_advances: 535,
-  weekly_cashflow_summary: 3072,
+const FILE_TO_TABLE: Record<string, string> = {
+  "workers.csv": "workers",
+  "daily_earnings.csv": "daily_earnings",
+  "recurring_obligations.csv": "recurring_obligations",
+  "transactions.csv": "transactions",
+  "earned_wage_advances.csv": "earned_wage_advances",
+  "weekly_cashflow_summary.csv": "weekly_cashflow_summary",
 };
 
 const TABLES: Record<
@@ -231,9 +238,113 @@ function emptyToNull(v: string | undefined): string | null {
   return v;
 }
 
+function scalar(db: Database.Database, sql: string): number {
+  const row = db.prepare(sql).get() as Record<string, number | null>;
+  const v = Object.values(row)[0];
+  return v == null ? 0 : Number(v);
+}
+
+function computeContentAssertions(db: Database.Database): Record<string, number> {
+  return {
+    "daily_earnings.sum_net_pay_cad": round2(
+      scalar(db, "SELECT SUM(net_pay_cad) AS v FROM daily_earnings"),
+    ),
+    "daily_earnings.sum_gross_pay_cad": round2(
+      scalar(db, "SELECT SUM(gross_pay_cad) AS v FROM daily_earnings"),
+    ),
+    "daily_earnings.sum_tips_cad": round2(
+      scalar(db, "SELECT SUM(tips_cad) AS v FROM daily_earnings"),
+    ),
+    "daily_earnings.count_paid_same_day": scalar(
+      db,
+      "SELECT COUNT(*) AS v FROM daily_earnings WHERE paid_same_day = 1",
+    ),
+    "daily_earnings.distinct_employer_id": scalar(
+      db,
+      "SELECT COUNT(DISTINCT employer_id) AS v FROM daily_earnings",
+    ),
+    "recurring_obligations.sum_amount_cad": round2(
+      scalar(db, "SELECT SUM(amount_cad) AS v FROM recurring_obligations"),
+    ),
+    "recurring_obligations.count_monthly_due_day_1": scalar(
+      db,
+      `SELECT COUNT(*) AS v FROM recurring_obligations
+       WHERE frequency = 'monthly' AND due_day_of_month = 1`,
+    ),
+    "transactions.sum_amount_cad": round2(
+      scalar(db, "SELECT SUM(amount_cad) AS v FROM transactions"),
+    ),
+    "transactions.count_notes_not_null": scalar(
+      db,
+      `SELECT COUNT(*) AS v FROM transactions
+       WHERE notes IS NOT NULL AND notes != ''`,
+    ),
+    "advances_excl_cancelled.sum_amount_cad": round2(
+      scalar(
+        db,
+        `SELECT SUM(amount_cad) AS v FROM earned_wage_advances
+         WHERE status != 'cancelled'`,
+      ),
+    ),
+    "advances_excl_cancelled.sum_fee_cad": round2(
+      scalar(
+        db,
+        `SELECT SUM(fee_cad) AS v FROM earned_wage_advances
+         WHERE status != 'cancelled'`,
+      ),
+    ),
+    "advances_excl_cancelled.max_amount_cad": round2(
+      scalar(
+        db,
+        `SELECT MAX(amount_cad) AS v FROM earned_wage_advances
+         WHERE status != 'cancelled'`,
+      ),
+    ),
+    "advances.min_requested_hour": scalar(
+      db,
+      `SELECT MIN(CAST(strftime('%H', replace(requested_at, 'T', ' ')) AS INTEGER)) AS v
+       FROM earned_wage_advances`,
+    ),
+    "advances.max_requested_hour": scalar(
+      db,
+      `SELECT MAX(CAST(strftime('%H', replace(requested_at, 'T', ' ')) AS INTEGER)) AS v
+       FROM earned_wage_advances`,
+    ),
+  };
+}
+
+function assertContent(
+  actual: Record<string, number>,
+  expected: DataManifest["content_assertions"],
+): boolean {
+  console.log("\nContent assertions:");
+  let failed = false;
+  for (const [key, exp] of Object.entries(expected)) {
+    if (!(key in actual)) {
+      console.log(`  ${key}: MISSING from computed set [FAIL]`);
+      failed = true;
+      continue;
+    }
+    const got = actual[key];
+    const expRounded = typeof exp === "number" && !Number.isInteger(exp) ? round2(exp) : exp;
+    const gotRounded =
+      typeof got === "number" && !Number.isInteger(expRounded) ? round2(got) : got;
+    const ok = gotRounded === expRounded;
+    console.log(
+      `  ${key}: ${gotRounded} (expected ${expRounded}) [${ok ? "OK" : "FAIL"}]`,
+    );
+    if (!ok) failed = true;
+  }
+  return !failed;
+}
+
 function seed(): void {
-  if (!fs.existsSync(DATA_DIR)) {
-    throw new Error(`Data directory missing: ${DATA_DIR}`);
+  const manifest = loadManifest();
+
+  console.log("Pace seed — canonical hash verification:");
+  const hashChecks = assertCanonicalHashes(manifest);
+  for (const c of hashChecks) {
+    console.log(`  ${c.file}: sha256=${c.actual} [OK]`);
   }
 
   if (fs.existsSync(DB_PATH)) {
@@ -262,7 +373,6 @@ function seed(): void {
           );
         }
       }
-      // Refuse renamed/extra surprise columns that aren't in the contract
       const unexpected = headers.filter((h) => !spec.columns.includes(h));
       if (unexpected.length > 0) {
         throw new Error(
@@ -288,17 +398,23 @@ function seed(): void {
 
   insertAll();
 
-  console.log("Pace seed — row counts:");
+  console.log("\nRow counts:");
   let failed = false;
-  for (const [table, expected] of Object.entries(EXPECTED)) {
+  for (const [file, meta] of Object.entries(manifest.files)) {
+    const table = FILE_TO_TABLE[file];
+    if (!table) {
+      console.log(`  ${file}: no table mapping [FAIL]`);
+      failed = true;
+      continue;
+    }
     const actual = counts[table] ?? -1;
-    const ok = actual === expected;
-    const mark = ok ? "OK" : "FAIL";
-    console.log(`  ${table}: ${actual} (expected ${expected}) [${mark}]`);
+    const ok = actual === meta.rows;
+    console.log(
+      `  ${table}: ${actual} (expected ${meta.rows}) [${ok ? "OK" : "FAIL"}]`,
+    );
     if (!ok) failed = true;
   }
 
-  // Guardrail: biweekly rows must be present (naive due_day matching drops these)
   const biweekly = (
     db
       .prepare(
@@ -313,7 +429,9 @@ function seed(): void {
       )
       .get() as { n: number }
   ).n;
-  console.log(`  recurring_obligations breakdown: monthly=${monthly}, biweekly=${biweekly}`);
+  console.log(
+    `  recurring_obligations breakdown: monthly=${monthly}, biweekly=${biweekly}`,
+  );
   if (monthly !== 811 || biweekly !== 38) {
     console.error(
       `FAIL: expected monthly=811 biweekly=38, got monthly=${monthly} biweekly=${biweekly}`,
@@ -321,14 +439,27 @@ function seed(): void {
     failed = true;
   }
 
+  const contentOk = assertContent(
+    computeContentAssertions(db),
+    manifest.content_assertions,
+  );
+  if (!contentOk) failed = true;
+
   db.close();
 
   if (failed) {
-    console.error("\nSeed FAILED — row counts do not match SPEC. Refusing to continue.");
+    console.error(
+      "\nSeed FAILED — assertions do not match data_manifest.json. Refusing to continue.",
+    );
     process.exit(1);
   }
 
   console.log(`\nSeed OK → ${DB_PATH}`);
 }
 
-seed();
+try {
+  seed();
+} catch (err) {
+  console.error(err instanceof Error ? err.message : err);
+  process.exit(1);
+}

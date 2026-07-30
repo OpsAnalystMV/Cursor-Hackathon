@@ -1,0 +1,45 @@
+{
+  "note": "Canonical Pace dataset. seed.ts MUST verify sha256 before loading. If a hash mismatches, abort \u2014 do not regenerate, do not proceed.",
+  "files": {
+    "workers.csv": {
+      "sha256": "f3b4f8ff1c69f6fb5b00c6301e4d852a2655a7778ec7ab2ba8bdef2ff90c3498",
+      "rows": 220
+    },
+    "daily_earnings.csv": {
+      "sha256": "a6b0165c93c66d84591c0ecc53b51e51913661039c961ee0b8a35d6bf391b0d8",
+      "rows": 12204
+    },
+    "recurring_obligations.csv": {
+      "sha256": "e639836aaa89787e9881d194aacb2f3859d5a5c93e6304d058be8d17f3d2d6b9",
+      "rows": 849
+    },
+    "transactions.csv": {
+      "sha256": "11502585cb491789a8e44b1974e12910485d47f67f8e58c8a8c6a96c9d8f6a67",
+      "rows": 31726
+    },
+    "earned_wage_advances.csv": {
+      "sha256": "3e64b480c717db4c7e7f43bf97b0b2a4d4dc402723e0eda9dd3ec3a0d7444d92",
+      "rows": 535
+    },
+    "weekly_cashflow_summary.csv": {
+      "sha256": "fc91bf3d46f50bae90769ceccec77deead86f3e6412aff956d8f3ead85289fc5",
+      "rows": 3072
+    }
+  },
+  "content_assertions": {
+    "daily_earnings.sum_net_pay_cad": 2015262.16,
+    "daily_earnings.sum_gross_pay_cad": 2195344.03,
+    "daily_earnings.sum_tips_cad": 104897.68,
+    "daily_earnings.count_paid_same_day": 4869,
+    "daily_earnings.distinct_employer_id": 40,
+    "recurring_obligations.sum_amount_cad": 364681.15,
+    "recurring_obligations.count_monthly_due_day_1": 197,
+    "transactions.sum_amount_cad": 3967582.88,
+    "transactions.count_notes_not_null": 14886,
+    "advances_excl_cancelled.sum_amount_cad": 36794.26,
+    "advances_excl_cancelled.sum_fee_cad": 1403.33,
+    "advances_excl_cancelled.max_amount_cad": 179.43,
+    "advances.min_requested_hour": 17,
+    "advances.max_requested_hour": 23
+  }
+}
