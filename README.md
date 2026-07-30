@@ -2,24 +2,22 @@
 
 Cashflow tool for people who earn daily and get billed monthly.
 
-Never show a balance — show whether today's shift cleared its share of what's coming.
+**Pace is an accounting reframe, not a forecaster.** It shows what of the balance is already committed, what one worked day must clear, and when the next cliff lands.
 
-## Stack
+## Phase status
 
-Next.js 15 (App Router, TypeScript strict) · Tailwind · better-sqlite3 · vitest
+1. **Seed** — done (`npm run seed`, sha256 + content assertions)
+2. **Math + tests** — done (`npm test`, all 8 `fixtures.json` cases)
+3. Screens — not started
 
-## Phase 1 — seed
-
-Canonical CSVs live in `/data`. Hashes and content assertions live in `data_manifest.json`.
+## Commands
 
 ```bash
 npm install
-npm run seed   # verifies sha256, loads SQLite, asserts content sums
-npm test       # includes scripts/seed.test.ts hash checks (CI)
+npm run seed
+npm test
 ```
-
-If `/data` is missing or a hash mismatches, seed aborts. Do not generate replacements.
 
 ## Spec
 
-See [`SPEC.md`](./SPEC.md). Hard constraints: [`.cursor/rules/pace.mdc`](./.cursor/rules/pace.mdc).
+[`SPEC.md`](./SPEC.md) · [`fixtures.json`](./fixtures.json) · [`.cursor/rules/pace.mdc`](./.cursor/rules/pace.mdc)
