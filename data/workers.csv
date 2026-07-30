@@ -1,0 +1,221 @@
+worker_id,city,province,occupation,pay_type,typical_daily_net_cad,income_volatility,tip_share,household_size,dependents,has_bank_account,uses_prepaid_card,primary_employer_id,tenure_months,has_side_gig,commute_mode,rent_burden_band
+W-0001,Calgary,AB,moving helper,daily,185.0,0.48,0.0,2,1,1,0,E-0001,14,0,transit,severe
+W-0002,Calgary,AB,cleaner,daily,152.59,0.25,0.04,4,3,1,0,E-0035,31,0,car,high
+W-0003,Fort McMurray,AB,restaurant cook,hourly,150.36,0.17,0.17,2,3,1,0,E-0004,31,0,rideshare,moderate
+W-0004,Medicine Hat,AB,construction labourer,hourly,141.61,0.26,0.22,2,1,1,1,E-0026,25,0,transit,moderate
+W-0005,Fort McMurray,AB,care aide,gig,110.35,0.31,0.01,4,1,1,0,E-0035,76,0,rideshare,high
+W-0006,Fort McMurray,AB,cleaner,hourly,201.41,0.12,0.16,3,0,1,1,E-0034,46,0,bike,moderate
+W-0007,Grande Prairie,AB,retail associate,daily,208.21,0.33,0.01,4,0,1,0,E-0008,9,0,bike,moderate
+W-0008,Lethbridge,AB,rideshare driver,daily,214.96,0.37,0.02,3,3,1,1,E-0009,33,0,walk,low
+W-0009,Calgary,AB,landscaper,gig,199.79,0.47,0.09,1,2,1,0,E-0025,25,0,walk,high
+W-0010,Lethbridge,AB,delivery driver,gig,134.74,0.56,0.05,4,3,1,0,E-0033,55,0,bike,high
+W-0011,Edmonton,AB,care aide,hourly,208.96,0.19,0.13,5,1,1,0,E-0022,79,1,walk,high
+W-0012,Edmonton,AB,barista,hourly,156.78,0.28,0.19,4,1,1,0,E-0015,27,0,transit,severe
+W-0013,Grande Prairie,AB,security guard,hourly,194.46,0.26,0.12,4,0,0,0,E-0008,83,1,rideshare,moderate
+W-0014,Lethbridge,AB,warehouse associate,daily,219.69,0.19,0.03,5,2,1,0,E-0016,78,0,walk,moderate
+W-0015,Red Deer,AB,rideshare driver,gig,181.36,0.56,0.21,5,2,1,0,E-0030,11,0,rideshare,moderate
+W-0016,Red Deer,AB,restaurant cook,gig,178.0,0.55,0.21,3,3,1,0,E-0036,55,1,bike,severe
+W-0017,Red Deer,AB,retail associate,hourly,141.92,0.43,0.23,4,0,1,0,E-0017,56,0,bike,low
+W-0018,Calgary,AB,delivery driver,gig,124.55,0.25,0.05,2,2,1,0,E-0032,70,0,bike,low
+W-0019,Lethbridge,AB,retail associate,daily,204.32,0.44,0.04,3,2,1,0,E-0004,77,0,car,high
+W-0020,Medicine Hat,AB,moving helper,hourly,170.05,0.31,0.05,5,0,1,0,E-0028,51,0,walk,low
+W-0021,Calgary,AB,moving helper,gig,186.93,0.57,0.05,5,1,0,1,E-0020,59,1,bike,moderate
+W-0022,Medicine Hat,AB,security guard,gig,186.12,0.16,0.22,4,1,0,0,E-0028,48,0,transit,high
+W-0023,Fort McMurray,AB,warehouse associate,gig,118.48,0.17,0.15,1,3,1,0,E-0011,75,0,bike,severe
+W-0024,Lethbridge,AB,warehouse associate,gig,139.93,0.12,0.15,1,2,1,0,E-0025,5,1,bike,low
+W-0025,Lethbridge,AB,restaurant cook,hourly,165.1,0.12,0.09,3,0,1,0,E-0015,56,0,car,high
+W-0026,Grande Prairie,AB,moving helper,hourly,195.44,0.32,0.2,5,0,1,0,E-0010,60,0,rideshare,high
+W-0027,Calgary,AB,retail associate,daily,157.11,0.39,0.01,5,3,1,0,E-0038,38,0,walk,moderate
+W-0028,Calgary,AB,moving helper,daily,170.42,0.51,0.04,1,2,1,0,E-0001,71,0,walk,moderate
+W-0029,Fort McMurray,AB,moving helper,hourly,203.18,0.38,0.06,3,2,1,0,E-0007,21,0,walk,low
+W-0030,Medicine Hat,AB,moving helper,hourly,141.04,0.12,0.14,5,0,1,0,E-0023,72,0,walk,severe
+W-0031,Grande Prairie,AB,retail associate,hourly,152.85,0.19,0.11,4,1,1,0,E-0036,48,0,rideshare,severe
+W-0032,Red Deer,AB,retail associate,gig,157.53,0.11,0.08,4,1,1,0,E-0018,7,0,transit,high
+W-0033,Edmonton,AB,construction labourer,daily,212.64,0.3,0.05,3,0,1,0,E-0010,6,0,walk,high
+W-0034,Fort McMurray,AB,construction labourer,daily,191.84,0.11,0.01,1,1,1,0,E-0036,60,0,transit,low
+W-0035,Grande Prairie,AB,delivery driver,gig,176.0,0.43,0.09,2,2,1,0,E-0040,71,0,transit,moderate
+W-0036,Edmonton,AB,care aide,daily,159.94,0.18,0.04,3,3,0,0,E-0013,25,0,walk,high
+W-0037,Grande Prairie,AB,retail associate,hourly,197.4,0.24,0.07,5,2,1,1,E-0004,49,0,rideshare,high
+W-0038,Edmonton,AB,retail associate,hourly,141.72,0.17,0.13,2,3,1,0,E-0029,29,0,rideshare,low
+W-0039,Fort McMurray,AB,landscaper,hourly,203.41,0.5,0.11,1,2,0,1,E-0025,53,1,walk,moderate
+W-0040,Calgary,AB,barista,daily,194.42,0.55,0.01,3,1,1,0,E-0007,59,0,walk,severe
+W-0041,Lethbridge,AB,delivery driver,hourly,142.46,0.19,0.17,4,3,1,1,E-0004,25,0,walk,moderate
+W-0042,Edmonton,AB,retail associate,gig,136.24,0.29,0.01,4,2,1,0,E-0029,81,1,car,high
+W-0043,Edmonton,AB,security guard,hourly,158.16,0.3,0.21,1,1,1,1,E-0033,84,0,walk,high
+W-0044,Medicine Hat,AB,care aide,gig,184.23,0.58,0.03,1,0,1,0,E-0010,72,0,rideshare,severe
+W-0045,Fort McMurray,AB,barista,hourly,192.11,0.3,0.18,3,2,1,0,E-0029,23,1,rideshare,high
+W-0046,Medicine Hat,AB,warehouse associate,daily,224.38,0.41,0.05,3,0,1,0,E-0018,42,0,bike,high
+W-0047,Fort McMurray,AB,care aide,daily,186.06,0.11,0.04,1,3,1,0,E-0008,10,0,transit,moderate
+W-0048,Red Deer,AB,retail associate,hourly,189.04,0.15,0.17,5,2,1,0,E-0022,75,0,walk,high
+W-0049,Medicine Hat,AB,security guard,daily,173.49,0.28,0.04,5,0,1,1,E-0030,49,1,rideshare,moderate
+W-0050,Grande Prairie,AB,landscaper,daily,221.44,0.27,0.04,4,3,0,0,E-0008,50,1,walk,high
+W-0051,Lethbridge,AB,rideshare driver,hourly,175.64,0.53,0.05,1,3,1,0,E-0014,56,0,walk,severe
+W-0052,Grande Prairie,AB,security guard,daily,229.76,0.24,0.04,5,1,1,0,E-0027,71,0,transit,high
+W-0053,Fort McMurray,AB,barista,hourly,157.58,0.17,0.1,1,1,1,0,E-0024,32,0,walk,moderate
+W-0054,Calgary,AB,delivery driver,hourly,202.52,0.23,0.11,3,1,1,1,E-0018,54,1,transit,high
+W-0055,Calgary,AB,security guard,hourly,185.82,0.47,0.08,4,0,1,0,E-0004,67,0,bike,high
+W-0056,Lethbridge,AB,rideshare driver,gig,152.26,0.5,0.08,4,1,1,1,E-0024,64,1,bike,moderate
+W-0057,Medicine Hat,AB,landscaper,daily,229.17,0.52,0.0,3,1,1,0,E-0026,82,1,rideshare,high
+W-0058,Fort McMurray,AB,care aide,daily,177.2,0.49,0.04,3,2,1,1,E-0007,33,0,walk,low
+W-0059,Fort McMurray,AB,landscaper,daily,152.32,0.4,0.02,4,3,1,1,E-0009,24,0,transit,moderate
+W-0060,Grande Prairie,AB,retail associate,hourly,163.16,0.56,0.18,2,2,1,0,E-0002,57,0,walk,high
+W-0061,Fort McMurray,AB,retail associate,hourly,165.57,0.33,0.19,5,3,1,0,E-0027,1,0,car,low
+W-0062,Medicine Hat,AB,retail associate,hourly,143.33,0.45,0.19,2,3,1,0,E-0034,52,1,transit,moderate
+W-0063,Fort McMurray,AB,care aide,hourly,184.56,0.34,0.16,2,1,1,0,E-0013,14,1,transit,high
+W-0064,Lethbridge,AB,barista,hourly,168.79,0.27,0.0,4,1,1,0,E-0024,20,0,rideshare,high
+W-0065,Grande Prairie,AB,retail associate,daily,211.95,0.2,0.03,2,3,1,1,E-0005,31,0,car,low
+W-0066,Red Deer,AB,retail associate,gig,176.72,0.11,0.06,3,2,1,0,E-0005,1,0,bike,high
+W-0067,Lethbridge,AB,restaurant cook,hourly,148.89,0.23,0.11,3,1,1,1,E-0026,19,0,walk,moderate
+W-0068,Calgary,AB,barista,hourly,147.54,0.3,0.14,1,2,1,0,E-0008,65,0,rideshare,severe
+W-0069,Lethbridge,AB,restaurant cook,daily,194.82,0.2,0.01,5,2,1,0,E-0019,58,1,rideshare,severe
+W-0070,Lethbridge,AB,landscaper,hourly,168.47,0.26,0.01,4,1,0,0,E-0040,19,0,walk,severe
+W-0071,Calgary,AB,rideshare driver,hourly,140.7,0.55,0.11,2,2,1,0,E-0026,76,1,bike,high
+W-0072,Lethbridge,AB,care aide,hourly,160.89,0.39,0.2,1,0,1,0,E-0007,40,1,transit,severe
+W-0073,Fort McMurray,AB,moving helper,daily,224.44,0.15,0.04,2,0,1,0,E-0034,64,0,bike,low
+W-0074,Medicine Hat,AB,restaurant cook,hourly,191.81,0.25,0.14,4,2,1,0,E-0023,4,0,walk,moderate
+W-0075,Lethbridge,AB,warehouse associate,hourly,198.75,0.12,0.16,2,0,1,0,E-0025,68,0,transit,low
+W-0076,Lethbridge,AB,delivery driver,hourly,197.94,0.21,0.14,5,0,1,1,E-0003,71,0,bike,high
+W-0077,Edmonton,AB,construction labourer,hourly,156.37,0.38,0.05,5,1,1,0,E-0013,43,1,rideshare,severe
+W-0078,Edmonton,AB,landscaper,daily,153.18,0.56,0.02,4,0,1,1,E-0035,3,0,transit,moderate
+W-0079,Red Deer,AB,barista,gig,191.28,0.47,0.03,2,0,1,0,E-0020,45,0,transit,high
+W-0080,Fort McMurray,AB,restaurant cook,gig,111.71,0.21,0.2,3,2,0,0,E-0015,60,0,walk,moderate
+W-0081,Medicine Hat,AB,care aide,gig,138.33,0.52,0.11,1,2,1,0,E-0036,50,0,rideshare,moderate
+W-0082,Grande Prairie,AB,restaurant cook,hourly,140.65,0.34,0.0,4,1,1,0,E-0005,21,0,walk,moderate
+W-0083,Red Deer,AB,retail associate,daily,201.75,0.47,0.01,5,0,1,0,E-0013,73,1,bike,high
+W-0084,Medicine Hat,AB,landscaper,hourly,153.97,0.34,0.03,2,3,1,0,E-0018,13,0,rideshare,high
+W-0085,Edmonton,AB,rideshare driver,hourly,154.64,0.21,0.07,2,3,0,0,E-0025,68,1,rideshare,low
+W-0086,Fort McMurray,AB,rideshare driver,gig,168.26,0.42,0.24,4,0,1,0,E-0030,75,1,walk,low
+W-0087,Edmonton,AB,landscaper,hourly,204.14,0.38,0.25,2,0,1,0,E-0015,39,0,transit,high
+W-0088,Calgary,AB,retail associate,hourly,185.74,0.48,0.07,4,3,1,0,E-0019,83,0,rideshare,severe
+W-0089,Calgary,AB,delivery driver,hourly,192.58,0.29,0.01,3,2,1,0,E-0016,16,0,transit,high
+W-0090,Fort McMurray,AB,warehouse associate,gig,185.7,0.59,0.11,1,1,1,0,E-0019,65,0,rideshare,severe
+W-0091,Red Deer,AB,barista,daily,154.49,0.15,0.01,3,0,0,0,E-0011,82,0,transit,moderate
+W-0092,Calgary,AB,care aide,daily,184.31,0.23,0.04,4,2,1,0,E-0026,83,0,bike,high
+W-0093,Edmonton,AB,landscaper,hourly,186.38,0.26,0.13,2,2,1,0,E-0021,21,0,walk,high
+W-0094,Red Deer,AB,moving helper,gig,199.42,0.22,0.18,3,1,1,0,E-0036,69,1,walk,low
+W-0095,Fort McMurray,AB,retail associate,daily,185.38,0.13,0.01,5,0,1,0,E-0038,48,0,rideshare,severe
+W-0096,Medicine Hat,AB,rideshare driver,hourly,178.6,0.27,0.18,4,0,1,1,E-0004,54,0,transit,moderate
+W-0097,Lethbridge,AB,retail associate,daily,167.06,0.44,0.0,4,0,1,0,E-0037,13,0,car,moderate
+W-0098,Lethbridge,AB,moving helper,daily,175.88,0.17,0.05,3,1,1,0,E-0037,36,1,bike,high
+W-0099,Lethbridge,AB,barista,gig,155.49,0.36,0.11,5,3,1,0,E-0023,10,0,car,low
+W-0100,Red Deer,AB,barista,gig,162.47,0.58,0.03,1,3,1,1,E-0040,54,1,transit,high
+W-0101,Calgary,AB,landscaper,gig,114.53,0.43,0.13,5,2,1,0,E-0037,78,1,car,severe
+W-0102,Grande Prairie,AB,delivery driver,hourly,187.79,0.12,0.24,2,0,0,0,E-0015,11,0,car,high
+W-0103,Grande Prairie,AB,delivery driver,hourly,164.99,0.47,0.18,3,3,1,1,E-0004,58,0,car,severe
+W-0104,Red Deer,AB,security guard,hourly,169.37,0.26,0.22,2,1,1,1,E-0037,38,0,bike,high
+W-0105,Red Deer,AB,cleaner,hourly,166.37,0.43,0.12,2,1,1,0,E-0038,66,0,walk,moderate
+W-0106,Grande Prairie,AB,security guard,hourly,199.79,0.53,0.2,2,0,1,0,E-0017,22,1,car,high
+W-0107,Calgary,AB,delivery driver,hourly,164.46,0.53,0.03,5,1,1,0,E-0002,57,0,car,high
+W-0108,Red Deer,AB,landscaper,hourly,200.3,0.44,0.1,2,2,1,1,E-0033,58,0,bike,severe
+W-0109,Red Deer,AB,restaurant cook,hourly,151.15,0.23,0.03,4,0,1,1,E-0035,28,0,car,moderate
+W-0110,Grande Prairie,AB,barista,daily,197.33,0.29,0.03,2,1,1,0,E-0032,33,0,rideshare,high
+W-0111,Grande Prairie,AB,moving helper,daily,170.17,0.52,0.04,4,0,1,0,E-0027,33,0,rideshare,moderate
+W-0112,Red Deer,AB,construction labourer,daily,217.71,0.22,0.0,3,2,1,0,E-0004,34,1,bike,moderate
+W-0113,Fort McMurray,AB,care aide,hourly,180.7,0.45,0.18,5,3,1,0,E-0003,36,0,rideshare,moderate
+W-0114,Edmonton,AB,landscaper,hourly,179.18,0.32,0.19,5,3,1,0,E-0021,7,0,rideshare,low
+W-0115,Grande Prairie,AB,rideshare driver,daily,208.8,0.2,0.03,2,0,1,0,E-0033,58,1,rideshare,moderate
+W-0116,Calgary,AB,retail associate,daily,186.28,0.18,0.03,1,3,1,0,E-0019,1,1,car,severe
+W-0117,Lethbridge,AB,retail associate,daily,199.98,0.52,0.03,2,3,1,0,E-0007,13,0,transit,moderate
+W-0118,Red Deer,AB,rideshare driver,daily,211.49,0.56,0.02,4,3,1,1,E-0035,46,0,rideshare,moderate
+W-0119,Grande Prairie,AB,rideshare driver,hourly,205.99,0.47,0.01,3,1,1,0,E-0029,15,0,car,high
+W-0120,Lethbridge,AB,care aide,daily,157.19,0.37,0.01,3,3,1,1,E-0033,55,0,walk,low
+W-0121,Medicine Hat,AB,retail associate,hourly,160.69,0.25,0.22,1,0,1,0,E-0005,49,0,bike,severe
+W-0122,Edmonton,AB,warehouse associate,hourly,171.07,0.42,0.2,1,0,1,1,E-0032,65,0,walk,moderate
+W-0123,Fort McMurray,AB,rideshare driver,hourly,199.54,0.13,0.03,1,0,1,0,E-0031,64,1,walk,severe
+W-0124,Edmonton,AB,construction labourer,hourly,205.42,0.29,0.17,1,3,1,0,E-0014,65,1,bike,low
+W-0125,Lethbridge,AB,moving helper,gig,124.74,0.1,0.02,1,0,1,1,E-0031,42,0,car,severe
+W-0126,Red Deer,AB,moving helper,hourly,154.45,0.11,0.21,5,2,1,0,E-0037,48,0,rideshare,high
+W-0127,Fort McMurray,AB,care aide,hourly,209.9,0.16,0.16,1,0,1,0,E-0019,76,0,transit,low
+W-0128,Medicine Hat,AB,warehouse associate,hourly,168.94,0.18,0.15,5,0,1,0,E-0029,3,1,walk,high
+W-0129,Calgary,AB,landscaper,daily,206.93,0.19,0.02,4,2,1,1,E-0014,70,0,walk,moderate
+W-0130,Calgary,AB,warehouse associate,gig,158.91,0.11,0.11,1,1,1,1,E-0022,69,0,car,moderate
+W-0131,Red Deer,AB,warehouse associate,daily,199.11,0.53,0.03,1,2,1,0,E-0032,84,0,walk,moderate
+W-0132,Red Deer,AB,warehouse associate,daily,195.34,0.26,0.03,5,3,1,0,E-0020,34,0,car,high
+W-0133,Calgary,AB,delivery driver,hourly,187.97,0.23,0.05,2,0,1,0,E-0029,6,0,bike,high
+W-0134,Edmonton,AB,delivery driver,daily,197.6,0.27,0.02,3,2,1,1,E-0035,75,0,car,high
+W-0135,Calgary,AB,construction labourer,daily,180.2,0.59,0.04,5,1,1,0,E-0023,56,0,walk,severe
+W-0136,Calgary,AB,care aide,hourly,192.63,0.49,0.01,3,0,1,0,E-0018,57,0,walk,high
+W-0137,Calgary,AB,cleaner,hourly,203.12,0.51,0.22,3,3,1,0,E-0040,38,1,rideshare,severe
+W-0138,Grande Prairie,AB,security guard,daily,157.44,0.25,0.0,4,1,1,1,E-0040,75,0,car,severe
+W-0139,Edmonton,AB,cleaner,daily,209.1,0.25,0.05,3,2,1,0,E-0019,25,0,car,low
+W-0140,Lethbridge,AB,landscaper,daily,226.89,0.37,0.03,3,2,1,0,E-0033,15,0,rideshare,high
+W-0141,Calgary,AB,construction labourer,daily,161.46,0.42,0.04,3,2,1,1,E-0035,56,1,transit,low
+W-0142,Calgary,AB,security guard,gig,137.74,0.24,0.06,3,1,1,0,E-0012,34,0,walk,severe
+W-0143,Edmonton,AB,moving helper,daily,183.57,0.33,0.04,1,1,1,0,E-0033,45,0,rideshare,high
+W-0144,Calgary,AB,construction labourer,daily,164.9,0.45,0.0,3,2,1,1,E-0024,29,0,bike,severe
+W-0145,Red Deer,AB,construction labourer,gig,197.36,0.51,0.14,4,2,0,0,E-0023,75,0,car,high
+W-0146,Edmonton,AB,security guard,hourly,190.28,0.3,0.22,4,3,1,0,E-0009,40,0,walk,severe
+W-0147,Red Deer,AB,rideshare driver,daily,229.94,0.28,0.01,1,0,0,1,E-0018,14,0,rideshare,low
+W-0148,Red Deer,AB,care aide,hourly,157.41,0.31,0.18,4,1,0,0,E-0034,62,0,transit,severe
+W-0149,Medicine Hat,AB,care aide,hourly,160.93,0.41,0.21,3,2,1,1,E-0008,19,0,bike,severe
+W-0150,Edmonton,AB,security guard,hourly,173.55,0.22,0.2,1,0,1,0,E-0020,48,0,transit,high
+W-0151,Edmonton,AB,delivery driver,daily,168.55,0.45,0.02,1,3,1,1,E-0002,47,0,bike,low
+W-0152,Lethbridge,AB,cleaner,daily,169.64,0.48,0.02,2,2,1,1,E-0006,26,1,bike,high
+W-0153,Fort McMurray,AB,warehouse associate,daily,218.67,0.15,0.03,2,3,1,0,E-0008,54,0,transit,moderate
+W-0154,Fort McMurray,AB,landscaper,gig,187.79,0.44,0.21,3,0,1,0,E-0039,3,0,car,high
+W-0155,Medicine Hat,AB,moving helper,gig,145.83,0.27,0.22,2,2,1,1,E-0029,21,0,car,high
+W-0156,Red Deer,AB,warehouse associate,gig,164.4,0.5,0.0,5,2,1,0,E-0012,78,0,transit,severe
+W-0157,Medicine Hat,AB,barista,hourly,197.78,0.22,0.15,1,3,1,0,E-0003,12,0,transit,high
+W-0158,Edmonton,AB,retail associate,daily,229.04,0.15,0.02,3,3,1,0,E-0018,73,1,bike,high
+W-0159,Edmonton,AB,cleaner,hourly,154.99,0.34,0.09,1,1,1,1,E-0032,35,1,car,moderate
+W-0160,Calgary,AB,moving helper,daily,207.46,0.36,0.0,5,3,1,1,E-0021,61,1,walk,moderate
+W-0161,Grande Prairie,AB,warehouse associate,gig,157.45,0.45,0.23,2,1,1,1,E-0004,48,0,walk,severe
+W-0162,Grande Prairie,AB,retail associate,daily,201.7,0.25,0.02,4,1,1,0,E-0007,84,0,car,severe
+W-0163,Grande Prairie,AB,construction labourer,gig,167.82,0.32,0.22,4,0,1,0,E-0014,42,0,rideshare,severe
+W-0164,Red Deer,AB,delivery driver,hourly,189.0,0.48,0.2,3,3,1,0,E-0025,5,0,bike,high
+W-0165,Grande Prairie,AB,warehouse associate,hourly,193.83,0.53,0.2,4,0,1,0,E-0009,15,0,rideshare,moderate
+W-0166,Fort McMurray,AB,cleaner,hourly,190.46,0.55,0.07,2,2,1,0,E-0036,79,0,walk,moderate
+W-0167,Edmonton,AB,delivery driver,gig,137.9,0.34,0.02,2,1,1,0,E-0014,20,0,rideshare,moderate
+W-0168,Calgary,AB,moving helper,hourly,201.57,0.27,0.07,3,0,1,0,E-0020,28,1,transit,severe
+W-0169,Medicine Hat,AB,cleaner,hourly,201.79,0.12,0.16,4,0,1,0,E-0029,35,0,car,low
+W-0170,Grande Prairie,AB,care aide,daily,165.77,0.38,0.02,5,3,1,0,E-0032,65,0,rideshare,high
+W-0171,Lethbridge,AB,cleaner,gig,125.07,0.25,0.24,5,0,1,0,E-0006,34,0,car,severe
+W-0172,Calgary,AB,care aide,hourly,156.45,0.29,0.23,3,1,1,1,E-0037,53,0,walk,high
+W-0173,Fort McMurray,AB,delivery driver,hourly,208.96,0.16,0.25,5,2,1,0,E-0015,41,0,rideshare,low
+W-0174,Edmonton,AB,moving helper,hourly,146.17,0.29,0.03,1,3,1,0,E-0032,73,0,walk,high
+W-0175,Lethbridge,AB,barista,daily,203.72,0.34,0.02,4,2,1,0,E-0001,21,0,rideshare,low
+W-0176,Grande Prairie,AB,security guard,daily,179.92,0.57,0.02,1,1,1,0,E-0005,73,0,car,high
+W-0177,Red Deer,AB,rideshare driver,daily,157.45,0.41,0.04,4,2,1,0,E-0013,11,0,transit,low
+W-0178,Grande Prairie,AB,moving helper,hourly,147.16,0.57,0.12,5,1,0,0,E-0034,27,0,rideshare,low
+W-0179,Medicine Hat,AB,barista,daily,173.46,0.53,0.05,4,1,1,1,E-0019,50,1,walk,moderate
+W-0180,Fort McMurray,AB,construction labourer,gig,134.4,0.39,0.02,5,3,1,0,E-0040,33,0,car,severe
+W-0181,Edmonton,AB,barista,hourly,157.59,0.16,0.14,2,0,1,0,E-0022,52,0,walk,severe
+W-0182,Red Deer,AB,rideshare driver,gig,139.78,0.22,0.02,2,3,1,0,E-0007,12,1,walk,moderate
+W-0183,Lethbridge,AB,warehouse associate,gig,123.88,0.34,0.14,5,0,1,0,E-0021,59,1,walk,high
+W-0184,Fort McMurray,AB,construction labourer,gig,124.37,0.28,0.06,3,1,1,0,E-0007,80,0,walk,high
+W-0185,Medicine Hat,AB,care aide,daily,155.96,0.5,0.04,2,2,1,0,E-0035,12,0,walk,moderate
+W-0186,Medicine Hat,AB,moving helper,daily,167.16,0.37,0.02,2,0,1,0,E-0012,83,1,car,moderate
+W-0187,Fort McMurray,AB,restaurant cook,daily,176.83,0.46,0.02,3,0,1,0,E-0020,27,0,transit,high
+W-0188,Fort McMurray,AB,cleaner,hourly,201.91,0.13,0.12,1,1,1,0,E-0002,75,0,car,high
+W-0189,Lethbridge,AB,moving helper,daily,169.12,0.47,0.03,1,3,1,0,E-0019,36,0,rideshare,severe
+W-0190,Grande Prairie,AB,delivery driver,daily,200.63,0.6,0.03,1,0,1,0,E-0002,30,0,bike,high
+W-0191,Medicine Hat,AB,moving helper,daily,201.41,0.46,0.03,4,1,1,0,E-0021,34,0,rideshare,moderate
+W-0192,Calgary,AB,warehouse associate,daily,150.3,0.53,0.02,5,2,1,0,E-0015,34,1,car,high
+W-0193,Lethbridge,AB,retail associate,hourly,180.17,0.19,0.11,3,1,1,0,E-0037,64,0,bike,high
+W-0194,Calgary,AB,warehouse associate,daily,150.41,0.47,0.05,5,2,1,0,E-0038,71,0,rideshare,moderate
+W-0195,Lethbridge,AB,barista,hourly,180.56,0.44,0.16,3,1,1,0,E-0034,52,1,transit,high
+W-0196,Edmonton,AB,delivery driver,daily,207.29,0.54,0.01,2,0,1,0,E-0038,41,0,car,high
+W-0197,Calgary,AB,rideshare driver,gig,188.56,0.34,0.1,5,1,1,0,E-0004,36,0,transit,high
+W-0198,Grande Prairie,AB,moving helper,hourly,154.14,0.49,0.23,4,3,1,0,E-0017,30,0,car,severe
+W-0199,Calgary,AB,cleaner,hourly,204.5,0.1,0.08,4,1,1,0,E-0016,32,0,rideshare,low
+W-0200,Edmonton,AB,moving helper,daily,206.26,0.27,0.0,5,3,1,0,E-0039,45,0,transit,low
+W-0201,Grande Prairie,AB,landscaper,hourly,204.25,0.48,0.02,1,1,0,0,E-0014,1,0,walk,moderate
+W-0202,Red Deer,AB,cleaner,hourly,160.96,0.28,0.12,3,0,1,0,E-0005,59,1,car,severe
+W-0203,Medicine Hat,AB,rideshare driver,daily,221.15,0.49,0.03,5,2,1,1,E-0005,27,0,transit,severe
+W-0204,Medicine Hat,AB,barista,gig,150.21,0.55,0.1,5,3,1,0,E-0039,63,0,car,low
+W-0205,Grande Prairie,AB,retail associate,daily,225.96,0.12,0.04,5,1,1,0,E-0028,61,1,bike,moderate
+W-0206,Edmonton,AB,delivery driver,daily,153.96,0.2,0.01,4,1,1,0,E-0033,54,0,walk,high
+W-0207,Grande Prairie,AB,construction labourer,daily,178.59,0.18,0.05,5,1,1,0,E-0014,25,0,transit,severe
+W-0208,Medicine Hat,AB,construction labourer,gig,132.75,0.4,0.02,5,2,1,0,E-0040,27,0,rideshare,high
+W-0209,Red Deer,AB,landscaper,gig,123.98,0.46,0.06,3,2,0,0,E-0012,12,0,car,low
+W-0210,Edmonton,AB,moving helper,gig,186.48,0.46,0.19,5,1,1,0,E-0024,22,0,bike,severe
+W-0211,Fort McMurray,AB,care aide,hourly,200.48,0.43,0.19,4,2,1,0,E-0001,45,1,car,moderate
+W-0212,Edmonton,AB,cleaner,daily,181.47,0.23,0.02,3,0,1,0,E-0040,77,0,car,moderate
+W-0213,Calgary,AB,delivery driver,daily,157.78,0.36,0.02,1,0,1,0,E-0033,65,0,car,high
+W-0214,Edmonton,AB,construction labourer,gig,134.65,0.35,0.21,3,1,1,1,E-0020,50,0,walk,severe
+W-0215,Medicine Hat,AB,security guard,hourly,151.98,0.51,0.0,3,1,1,0,E-0019,76,0,walk,high
+W-0216,Edmonton,AB,security guard,gig,141.5,0.1,0.02,4,0,1,0,E-0013,44,1,rideshare,high
+W-0217,Calgary,AB,landscaper,hourly,140.47,0.23,0.12,5,3,1,0,E-0027,20,0,transit,severe
+W-0218,Red Deer,AB,restaurant cook,hourly,143.52,0.23,0.21,1,0,1,1,E-0017,33,0,rideshare,low
+W-0219,Grande Prairie,AB,rideshare driver,gig,131.28,0.41,0.11,3,0,1,0,E-0036,27,1,transit,high
+W-0220,Lethbridge,AB,warehouse associate,gig,134.01,0.14,0.02,1,1,1,1,E-0021,16,0,transit,severe

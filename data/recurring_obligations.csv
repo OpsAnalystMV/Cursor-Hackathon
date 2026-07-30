@@ -1,0 +1,850 @@
+obligation_id,worker_id,name,category,amount_cad,frequency,due_day_of_month,autopay,essential
+O-00001,W-0001,Rent,housing,2056.0,monthly,1,1,1
+O-00002,W-0001,Mobile phone,phone,66.0,monthly,1,1,1
+O-00003,W-0001,Utilities,utilities,154.0,monthly,5,1,1
+O-00004,W-0001,Streaming,entertainment,9.99,monthly,22,1,0
+O-00005,W-0084,Car payment,debt_payment,323.98,monthly,15,0,1
+O-00006,W-0158,Storage unit,housing,104.55,monthly,10,1,0
+O-00007,W-0054,Credit card min,debt_payment,54.61,monthly,20,0,1
+O-00008,W-0019,Mobile phone,phone,92.36,monthly,1,0,1
+O-00009,W-0138,Utilities,utilities,156.05,monthly,5,0,1
+O-00010,W-0038,Car payment,debt_payment,327.29,monthly,15,0,1
+O-00011,W-0080,Rent,housing,1372.03,monthly,1,0,1
+O-00012,W-0039,Utilities,utilities,114.56,monthly,5,1,1
+O-00013,W-0132,Credit card min,debt_payment,93.12,monthly,20,1,1
+O-00014,W-0078,Utilities,utilities,178.0,monthly,5,0,1
+O-00015,W-0173,Childcare,childcare,415.17,monthly,1,0,1
+O-00016,W-0216,Gym,entertainment,38.1,monthly,8,0,1
+O-00017,W-0035,Utilities,utilities,178.52,monthly,5,0,1
+O-00018,W-0217,Storage unit,housing,75.65,monthly,10,0,1
+O-00019,W-0207,Gym,entertainment,26.16,monthly,8,1,1
+O-00020,W-0026,Streaming,entertainment,10.63,monthly,22,1,1
+O-00021,W-0178,Childcare,childcare,546.49,monthly,1,1,1
+O-00022,W-0220,Utilities,utilities,93.14,monthly,5,1,1
+O-00023,W-0040,Storage unit,housing,81.47,monthly,10,1,0
+O-00024,W-0182,Mobile phone,phone,45.65,monthly,1,0,1
+O-00025,W-0121,Childcare,childcare,1166.33,monthly,1,1,1
+O-00026,W-0024,Internet,utilities,114.08,monthly,15,1,1
+O-00027,W-0050,Mobile phone,phone,74.86,monthly,1,0,1
+O-00028,W-0133,Streaming,entertainment,23.53,monthly,22,1,0
+O-00029,W-0060,Rent,housing,1848.47,monthly,1,1,1
+O-00030,W-0215,Storage unit,housing,123.22,monthly,10,0,1
+O-00031,W-0072,Internet,utilities,110.45,monthly,15,0,1
+O-00032,W-0207,Childcare,childcare,1018.69,monthly,1,0,0
+O-00033,W-0091,Internet,utilities,64.04,monthly,15,0,1
+O-00034,W-0173,Car payment,debt_payment,256.28,monthly,15,1,1
+O-00035,W-0142,Rent,housing,1412.25,monthly,1,1,1
+O-00036,W-0034,Storage unit,housing,67.76,monthly,10,1,0
+O-00037,W-0081,Rent,housing,1799.91,monthly,1,0,1
+O-00038,W-0205,Car payment,debt_payment,276.32,monthly,15,0,1
+O-00039,W-0063,Gym,entertainment,39.83,monthly,8,0,1
+O-00040,W-0084,Mobile phone,phone,91.74,monthly,1,0,1
+O-00041,W-0065,Mobile phone,phone,82.63,monthly,1,1,1
+O-00042,W-0002,Internet,utilities,111.15,monthly,15,0,1
+O-00043,W-0021,Storage unit,housing,67.07,monthly,10,0,0
+O-00044,W-0174,Gym,entertainment,32.43,monthly,8,0,1
+O-00045,W-0194,Utilities,utilities,99.36,monthly,5,1,1
+O-00046,W-0028,Credit card min,debt_payment,48.86,monthly,20,0,1
+O-00047,W-0178,Internet,utilities,85.7,monthly,15,1,1
+O-00048,W-0143,Childcare,childcare,702.93,monthly,1,0,1
+O-00049,W-0177,Utilities,utilities,121.16,monthly,5,1,1
+O-00050,W-0013,Credit card min,debt_payment,81.06,monthly,20,1,1
+O-00051,W-0133,Mobile phone,phone,64.98,monthly,1,1,1
+O-00052,W-0126,Rent,housing,1114.97,monthly,1,0,1
+O-00053,W-0141,Credit card min,debt_payment,83.7,monthly,20,1,1
+O-00054,W-0177,Childcare,childcare,618.25,monthly,1,0,1
+O-00055,W-0120,Credit card min,debt_payment,41.37,monthly,20,0,1
+O-00056,W-0022,Streaming,entertainment,19.92,monthly,22,0,0
+O-00057,W-0152,Storage unit,housing,111.87,monthly,10,1,1
+O-00058,W-0055,Mobile phone,phone,56.99,monthly,1,0,1
+O-00059,W-0168,Streaming,entertainment,22.07,monthly,22,0,1
+O-00060,W-0183,Streaming,entertainment,12.1,monthly,22,0,0
+O-00061,W-0070,Streaming,entertainment,11.46,monthly,22,1,1
+O-00062,W-0070,Childcare,childcare,603.77,monthly,1,0,1
+O-00063,W-0050,Rent,housing,1739.36,monthly,1,0,1
+O-00064,W-0122,Credit card min,debt_payment,50.61,monthly,20,0,1
+O-00065,W-0149,Car payment,debt_payment,435.21,monthly,15,0,1
+O-00066,W-0085,Car payment,debt_payment,372.89,monthly,15,1,1
+O-00067,W-0083,Credit card min,debt_payment,145.05,monthly,20,0,1
+O-00068,W-0216,Rent,housing,1755.27,monthly,1,0,1
+O-00069,W-0068,Credit card min,debt_payment,44.03,monthly,20,1,1
+O-00070,W-0053,Mobile phone,phone,61.55,monthly,1,1,1
+O-00071,W-0147,Gym,entertainment,21.87,monthly,8,1,1
+O-00072,W-0139,Gym,entertainment,32.21,monthly,8,1,1
+O-00073,W-0099,Storage unit,housing,74.29,monthly,10,0,1
+O-00074,W-0047,Internet,utilities,64.96,monthly,15,0,1
+O-00075,W-0213,Credit card min,debt_payment,115.33,monthly,20,1,1
+O-00076,W-0117,Gym,entertainment,40.25,monthly,8,0,0
+O-00077,W-0083,Gym,entertainment,39.18,monthly,8,1,1
+O-00078,W-0155,Credit card min,debt_payment,60.54,monthly,20,1,1
+O-00079,W-0091,Credit card min,debt_payment,111.75,monthly,20,0,1
+O-00080,W-0145,Gym,entertainment,24.66,monthly,8,0,0
+O-00081,W-0173,Utilities,utilities,110.6,monthly,5,1,1
+O-00082,W-0114,Credit card min,debt_payment,107.03,monthly,20,1,1
+O-00083,W-0062,Car payment,debt_payment,536.65,monthly,15,0,1
+O-00084,W-0211,Rent,housing,969.61,monthly,1,0,1
+O-00085,W-0026,Internet,utilities,68.07,monthly,15,0,1
+O-00086,W-0125,Streaming,entertainment,19.67,monthly,22,0,1
+O-00087,W-0023,Childcare,childcare,878.39,monthly,1,1,1
+O-00088,W-0108,Storage unit,housing,83.08,monthly,10,1,0
+O-00089,W-0015,Utilities,utilities,81.86,monthly,5,0,1
+O-00090,W-0205,Internet,utilities,116.42,monthly,15,1,1
+O-00091,W-0093,Streaming,entertainment,22.64,monthly,22,1,1
+O-00092,W-0124,Storage unit,housing,120.93,monthly,10,1,0
+O-00093,W-0135,Utilities,utilities,149.4,monthly,5,1,1
+O-00094,W-0105,Utilities,utilities,98.44,monthly,5,1,1
+O-00095,W-0188,Childcare,childcare,460.33,monthly,1,0,1
+O-00096,W-0136,Storage unit,housing,98.24,monthly,10,0,0
+O-00097,W-0070,Rent,housing,1340.76,monthly,1,0,1
+O-00098,W-0176,Car payment,debt_payment,330.26,monthly,15,1,1
+O-00099,W-0210,Childcare,childcare,570.73,monthly,1,0,1
+O-00100,W-0028,Gym,entertainment,20.7,monthly,8,1,0
+O-00101,W-0152,Mobile phone,phone,87.87,monthly,1,0,1
+O-00102,W-0151,Internet,utilities,96.32,monthly,15,0,1
+O-00103,W-0161,Childcare,childcare,775.23,monthly,1,0,1
+O-00104,W-0200,Streaming,entertainment,17.98,monthly,22,1,1
+O-00105,W-0138,Storage unit,housing,126.06,monthly,10,0,0
+O-00106,W-0129,Storage unit,housing,123.55,monthly,10,0,0
+O-00107,W-0035,Car payment,debt_payment,281.37,monthly,15,0,1
+O-00108,W-0200,Childcare,childcare,427.56,monthly,1,1,1
+O-00109,W-0202,Storage unit,housing,111.76,monthly,10,0,0
+O-00110,W-0003,Credit card min,debt_payment,130.93,monthly,20,1,1
+O-00111,W-0113,Utilities,utilities,87.61,monthly,5,1,1
+O-00112,W-0129,Childcare,childcare,792.27,monthly,1,0,1
+O-00113,W-0120,Storage unit,housing,98.69,monthly,10,0,1
+O-00114,W-0199,Credit card min,debt_payment,115.18,monthly,20,1,1
+O-00115,W-0199,Rent,housing,1342.18,monthly,1,0,1
+O-00116,W-0065,Credit card min,debt_payment,96.92,monthly,20,1,1
+O-00117,W-0026,Rent,housing,1043.3,monthly,1,1,1
+O-00118,W-0170,Streaming,entertainment,12.05,monthly,22,0,1
+O-00119,W-0157,Rent,housing,1085.92,monthly,1,0,1
+O-00120,W-0002,Childcare,childcare,1007.67,monthly,1,0,1
+O-00121,W-0146,Credit card min,debt_payment,43.14,monthly,20,0,1
+O-00122,W-0160,Credit card min,debt_payment,82.38,monthly,20,0,1
+O-00123,W-0165,Streaming,entertainment,16.95,monthly,22,1,0
+O-00124,W-0140,Credit card min,debt_payment,107.07,monthly,20,0,1
+O-00125,W-0139,Car payment,debt_payment,358.72,monthly,15,1,1
+O-00126,W-0079,Streaming,entertainment,12.67,monthly,22,0,1
+O-00127,W-0133,Car payment,debt_payment,512.76,monthly,15,0,1
+O-00128,W-0197,Internet,utilities,70.34,monthly,15,1,1
+O-00129,W-0012,Childcare,childcare,717.85,monthly,1,1,1
+O-00130,W-0197,Rent,housing,1125.43,monthly,1,1,1
+O-00131,W-0201,Car payment,debt_payment,376.55,monthly,15,1,1
+O-00132,W-0069,Credit card min,debt_payment,82.72,monthly,20,1,1
+O-00133,W-0057,Car payment,debt_payment,294.72,monthly,15,0,1
+O-00134,W-0104,Car payment,debt_payment,344.22,monthly,15,1,1
+O-00135,W-0206,Childcare,childcare,809.13,monthly,1,0,1
+O-00136,W-0109,Streaming,entertainment,22.04,monthly,22,0,1
+O-00137,W-0061,Utilities,utilities,169.99,monthly,5,0,1
+O-00138,W-0134,Gym,entertainment,28.42,monthly,8,1,1
+O-00139,W-0164,Utilities,utilities,186.78,monthly,5,0,1
+O-00140,W-0187,Gym,entertainment,34.08,monthly,8,0,1
+O-00141,W-0115,Car payment,debt_payment,540.86,monthly,15,1,1
+O-00142,W-0160,Gym,entertainment,40.34,monthly,8,0,1
+O-00143,W-0173,Streaming,entertainment,20.78,monthly,22,0,1
+O-00144,W-0094,Streaming,entertainment,19.39,monthly,22,1,1
+O-00145,W-0076,Credit card min,debt_payment,63.85,monthly,20,1,1
+O-00146,W-0018,Car payment,debt_payment,406.86,monthly,15,0,1
+O-00147,W-0030,Childcare,childcare,908.7,monthly,1,0,1
+O-00148,W-0103,Car payment,debt_payment,380.29,monthly,15,1,1
+O-00149,W-0110,Utilities,utilities,112.92,monthly,5,1,1
+O-00150,W-0135,Mobile phone,phone,46.89,monthly,1,1,1
+O-00151,W-0096,Credit card min,debt_payment,145.51,monthly,20,0,1
+O-00152,W-0008,Streaming,entertainment,23.26,monthly,22,0,1
+O-00153,W-0121,Storage unit,housing,113.92,monthly,10,0,1
+O-00154,W-0051,Rent,housing,980.84,monthly,1,1,1
+O-00155,W-0011,Mobile phone,phone,80.12,monthly,1,0,1
+O-00156,W-0183,Gym,entertainment,20.46,monthly,8,0,0
+O-00157,W-0079,Car payment,debt_payment,392.71,monthly,15,1,1
+O-00158,W-0172,Credit card min,debt_payment,84.86,monthly,20,0,1
+O-00159,W-0037,Mobile phone,phone,76.65,monthly,1,1,1
+O-00160,W-0205,Credit card min,debt_payment,44.92,monthly,20,0,1
+O-00161,W-0200,Mobile phone,phone,94.88,monthly,1,1,1
+O-00162,W-0016,Gym,entertainment,44.34,monthly,8,0,1
+O-00163,W-0144,Credit card min,debt_payment,115.03,monthly,20,0,1
+O-00164,W-0038,Rent,housing,1943.85,monthly,1,1,1
+O-00165,W-0012,Mobile phone,phone,49.98,monthly,1,0,1
+O-00166,W-0142,Childcare,childcare,1191.5,monthly,1,1,1
+O-00167,W-0134,Mobile phone,phone,45.92,monthly,1,0,1
+O-00168,W-0007,Streaming,entertainment,21.06,monthly,22,1,1
+O-00169,W-0106,Childcare,childcare,1014.03,monthly,1,0,1
+O-00170,W-0168,Mobile phone,phone,80.41,monthly,1,0,1
+O-00171,W-0211,Utilities,utilities,212.48,monthly,5,0,1
+O-00172,W-0086,Streaming,entertainment,10.11,monthly,22,1,0
+O-00173,W-0011,Utilities,utilities,95.67,monthly,5,0,1
+O-00174,W-0031,Utilities,utilities,214.89,monthly,5,0,1
+O-00175,W-0052,Storage unit,housing,110.43,monthly,10,0,1
+O-00176,W-0166,Gym,entertainment,33.2,monthly,8,0,1
+O-00177,W-0013,Car payment,debt_payment,266.0,monthly,15,0,1
+O-00178,W-0007,Car payment,debt_payment,251.71,monthly,15,1,1
+O-00179,W-0117,Internet,utilities,67.15,monthly,15,1,1
+O-00180,W-0167,Rent,housing,1509.05,monthly,1,1,1
+O-00181,W-0102,Streaming,entertainment,14.74,monthly,22,0,0
+O-00182,W-0129,Car payment,debt_payment,387.7,monthly,15,0,1
+O-00183,W-0022,Storage unit,housing,135.53,monthly,10,0,1
+O-00184,W-0145,Car payment,debt_payment,472.5,monthly,15,1,1
+O-00185,W-0006,Streaming,entertainment,14.26,monthly,22,1,1
+O-00186,W-0077,Internet,utilities,64.5,monthly,15,1,1
+O-00187,W-0077,Mobile phone,phone,49.1,monthly,1,1,1
+O-00188,W-0002,Gym,entertainment,39.95,monthly,8,1,1
+O-00189,W-0076,Mobile phone,phone,87.85,monthly,1,1,1
+O-00190,W-0036,Gym,entertainment,42.2,monthly,8,0,1
+O-00191,W-0212,Mobile phone,phone,80.81,monthly,1,1,1
+O-00192,W-0024,Streaming,entertainment,16.15,monthly,22,0,0
+O-00193,W-0203,Mobile phone,phone,66.87,monthly,1,0,1
+O-00194,W-0033,Gym,entertainment,44.08,monthly,8,0,1
+O-00195,W-0122,Storage unit,housing,75.27,monthly,10,0,0
+O-00196,W-0153,Childcare,childcare,477.03,monthly,1,0,1
+O-00197,W-0166,Childcare,childcare,534.93,monthly,1,1,1
+O-00198,W-0119,Car payment,debt_payment,527.81,monthly,15,0,1
+O-00199,W-0083,Rent,housing,1253.08,monthly,1,0,1
+O-00200,W-0196,Utilities,utilities,123.51,monthly,5,0,1
+O-00201,W-0048,Mobile phone,phone,44.94,monthly,1,0,1
+O-00202,W-0115,Streaming,entertainment,12.16,monthly,22,1,0
+O-00203,W-0063,Childcare,childcare,943.09,monthly,1,1,1
+O-00204,W-0017,Mobile phone,phone,71.0,monthly,1,1,1
+O-00205,W-0029,Childcare,childcare,946.01,monthly,1,1,1
+O-00206,W-0090,Credit card min,debt_payment,60.77,monthly,20,0,1
+O-00207,W-0105,Car payment,debt_payment,516.15,monthly,15,1,1
+O-00208,W-0174,Car payment,debt_payment,285.49,monthly,15,0,1
+O-00209,W-0120,Childcare,childcare,877.12,monthly,1,0,1
+O-00210,W-0168,Gym,entertainment,34.33,monthly,8,1,1
+O-00211,W-0204,Credit card min,debt_payment,136.6,monthly,20,0,1
+O-00212,W-0032,Mobile phone,phone,58.71,monthly,1,1,1
+O-00213,W-0112,Gym,entertainment,39.03,monthly,8,0,0
+O-00214,W-0013,Childcare,childcare,648.24,monthly,1,0,1
+O-00215,W-0074,Gym,entertainment,28.0,monthly,8,0,1
+O-00216,W-0207,Utilities,utilities,100.23,monthly,5,1,1
+O-00217,W-0096,Storage unit,housing,75.89,monthly,10,1,1
+O-00218,W-0153,Internet,utilities,110.89,monthly,15,0,1
+O-00219,W-0205,Rent,housing,1822.7,monthly,1,1,1
+O-00220,W-0210,Car payment,debt_payment,286.54,monthly,15,1,1
+O-00221,W-0146,Mobile phone,phone,58.55,monthly,1,0,1
+O-00222,W-0129,Streaming,entertainment,15.45,monthly,22,1,1
+O-00223,W-0166,Internet,utilities,109.14,monthly,15,0,1
+O-00224,W-0189,Mobile phone,phone,71.93,monthly,1,0,1
+O-00225,W-0083,Childcare,childcare,908.65,monthly,1,0,1
+O-00226,W-0085,Streaming,entertainment,23.55,monthly,22,1,1
+O-00227,W-0091,Car payment,debt_payment,469.78,monthly,15,1,1
+O-00228,W-0198,Storage unit,housing,120.53,monthly,10,1,1
+O-00229,W-0073,Storage unit,housing,81.26,monthly,10,1,1
+O-00230,W-0103,Gym,entertainment,37.93,monthly,8,0,0
+O-00231,W-0127,Rent,housing,1417.49,monthly,1,0,1
+O-00232,W-0159,Streaming,entertainment,15.21,monthly,22,0,1
+O-00233,W-0169,Car payment,debt_payment,327.66,monthly,15,0,1
+O-00234,W-0189,Childcare,childcare,400.84,monthly,1,0,1
+O-00235,W-0164,Internet,utilities,69.11,monthly,15,1,1
+O-00236,W-0123,Internet,utilities,78.49,monthly,15,0,1
+O-00237,W-0002,Mobile phone,phone,60.62,monthly,1,0,1
+O-00238,W-0033,Streaming,entertainment,21.01,monthly,22,0,0
+O-00239,W-0056,Mobile phone,phone,61.43,monthly,1,0,1
+O-00240,W-0036,Mobile phone,phone,51.84,monthly,1,1,1
+O-00241,W-0179,Storage unit,housing,85.8,monthly,10,1,0
+O-00242,W-0116,Storage unit,housing,67.55,monthly,10,0,0
+O-00243,W-0010,Gym,entertainment,43.07,monthly,8,1,1
+O-00244,W-0097,Gym,entertainment,42.61,monthly,8,1,0
+O-00245,W-0209,Rent,housing,2129.38,monthly,1,0,1
+O-00246,W-0112,Streaming,entertainment,20.36,monthly,22,0,0
+O-00247,W-0188,Car payment,debt_payment,347.29,monthly,15,0,1
+O-00248,W-0016,Utilities,utilities,186.91,monthly,5,1,1
+O-00249,W-0061,Car payment,debt_payment,363.38,monthly,15,0,1
+O-00250,W-0048,Internet,utilities,65.53,monthly,15,0,1
+O-00251,W-0161,Credit card min,debt_payment,91.91,monthly,20,0,1
+O-00252,W-0181,Internet,utilities,66.27,monthly,15,1,1
+O-00253,W-0171,Streaming,entertainment,14.41,monthly,22,1,1
+O-00254,W-0047,Mobile phone,phone,53.61,monthly,1,1,1
+O-00255,W-0102,Car payment,debt_payment,291.1,monthly,15,0,1
+O-00256,W-0191,Mobile phone,phone,62.72,monthly,1,0,1
+O-00257,W-0149,Childcare,childcare,1186.62,monthly,1,1,1
+O-00258,W-0065,Storage unit,housing,122.21,monthly,10,1,1
+O-00259,W-0090,Rent,housing,1277.22,monthly,1,1,1
+O-00260,W-0048,Streaming,entertainment,16.55,monthly,22,1,0
+O-00261,W-0091,Storage unit,housing,86.19,monthly,10,0,1
+O-00262,W-0184,Mobile phone,phone,94.85,monthly,1,0,1
+O-00263,W-0217,Mobile phone,phone,57.51,monthly,1,0,1
+O-00264,W-0078,Mobile phone,phone,81.99,monthly,1,1,1
+O-00265,W-0102,Gym,entertainment,20.94,monthly,8,0,0
+O-00266,W-0207,Internet,utilities,107.65,monthly,15,0,1
+O-00267,W-0181,Storage unit,housing,108.3,monthly,10,1,0
+O-00268,W-0062,Childcare,childcare,1147.22,monthly,1,1,1
+O-00269,W-0046,Internet,utilities,92.11,monthly,15,0,1
+O-00270,W-0180,Internet,utilities,83.02,monthly,15,1,1
+O-00271,W-0107,Car payment,debt_payment,349.46,monthly,15,1,1
+O-00272,W-0215,Car payment,debt_payment,536.05,monthly,15,0,1
+O-00273,W-0179,Car payment,debt_payment,538.73,monthly,15,1,1
+O-00274,W-0031,Credit card min,debt_payment,39.3,monthly,20,1,1
+O-00275,W-0208,Childcare,childcare,448.25,monthly,1,0,1
+O-00276,W-0106,Utilities,utilities,173.14,monthly,5,1,1
+O-00277,W-0012,Streaming,entertainment,17.63,monthly,22,1,1
+O-00278,W-0208,Mobile phone,phone,63.53,monthly,1,1,1
+O-00279,W-0195,Storage unit,housing,137.85,monthly,10,0,1
+O-00280,W-0062,Internet,utilities,114.39,monthly,15,0,1
+O-00281,W-0007,Utilities,utilities,181.97,monthly,5,0,1
+O-00282,W-0111,Rent,housing,2065.48,monthly,1,0,1
+O-00283,W-0219,Car payment,debt_payment,486.4,monthly,15,1,1
+O-00284,W-0202,Car payment,debt_payment,522.73,monthly,15,1,1
+O-00285,W-0068,Mobile phone,phone,63.06,monthly,1,0,1
+O-00286,W-0117,Mobile phone,phone,47.06,monthly,1,1,1
+O-00287,W-0173,Rent,housing,1770.12,monthly,1,1,1
+O-00288,W-0104,Streaming,entertainment,14.88,monthly,22,0,0
+O-00289,W-0150,Utilities,utilities,119.51,monthly,5,0,1
+O-00290,W-0211,Childcare,childcare,632.0,monthly,1,1,1
+O-00291,W-0209,Gym,entertainment,31.38,monthly,8,0,0
+O-00292,W-0139,Credit card min,debt_payment,142.89,monthly,20,0,1
+O-00293,W-0214,Rent,housing,1044.25,monthly,1,0,1
+O-00294,W-0020,Mobile phone,phone,85.45,monthly,1,1,1
+O-00295,W-0093,Storage unit,housing,79.21,monthly,10,1,0
+O-00296,W-0155,Streaming,entertainment,16.55,monthly,22,0,0
+O-00297,W-0210,Credit card min,debt_payment,44.13,monthly,20,0,1
+O-00298,W-0141,Streaming,entertainment,10.31,monthly,22,1,1
+O-00299,W-0071,Internet,utilities,95.21,monthly,15,0,1
+O-00300,W-0132,Streaming,entertainment,22.36,monthly,22,1,1
+O-00301,W-0203,Car payment,debt_payment,442.28,monthly,15,0,1
+O-00302,W-0162,Gym,entertainment,30.13,monthly,8,0,0
+O-00303,W-0132,Gym,entertainment,37.19,monthly,8,0,0
+O-00304,W-0189,Rent,housing,1043.48,monthly,1,0,1
+O-00305,W-0135,Internet,utilities,78.51,monthly,15,1,1
+O-00306,W-0054,Childcare,childcare,799.07,monthly,1,0,1
+O-00307,W-0114,Car payment,debt_payment,256.68,monthly,15,0,1
+O-00308,W-0177,Streaming,entertainment,20.68,monthly,22,0,0
+O-00309,W-0045,Mobile phone,phone,84.2,monthly,1,1,1
+O-00310,W-0143,Streaming,entertainment,16.03,monthly,22,1,0
+O-00311,W-0165,Utilities,utilities,151.35,monthly,5,1,1
+O-00312,W-0130,Credit card min,debt_payment,68.87,monthly,20,1,1
+O-00313,W-0048,Credit card min,debt_payment,126.85,monthly,20,0,1
+O-00314,W-0185,Utilities,utilities,198.42,monthly,5,0,1
+O-00315,W-0187,Rent,housing,1365.35,monthly,1,0,1
+O-00316,W-0069,Storage unit,housing,81.75,monthly,10,1,1
+O-00317,W-0180,Childcare,childcare,534.49,monthly,1,1,1
+O-00318,W-0096,Rent,housing,1584.86,monthly,1,1,1
+O-00319,W-0011,Rent,housing,1535.59,monthly,1,0,1
+O-00320,W-0169,Storage unit,housing,65.37,monthly,10,0,0
+O-00321,W-0043,Storage unit,housing,66.04,monthly,10,0,1
+O-00322,W-0088,Credit card min,debt_payment,93.46,monthly,20,1,1
+O-00323,W-0097,Utilities,utilities,105.42,monthly,5,0,1
+O-00324,W-0067,Childcare,childcare,483.62,monthly,1,1,1
+O-00325,W-0061,Internet,utilities,60.58,monthly,15,1,1
+O-00326,W-0122,Utilities,utilities,129.78,monthly,5,1,1
+O-00327,W-0009,Gym,entertainment,32.1,monthly,8,0,0
+O-00328,W-0058,Rent,housing,2178.78,monthly,1,0,1
+O-00329,W-0183,Childcare,childcare,1057.02,monthly,1,0,1
+O-00330,W-0185,Internet,utilities,90.97,monthly,15,0,1
+O-00331,W-0124,Childcare,childcare,980.39,monthly,1,0,1
+O-00332,W-0195,Streaming,entertainment,10.22,monthly,22,1,1
+O-00333,W-0039,Credit card min,debt_payment,112.55,monthly,20,1,1
+O-00334,W-0197,Mobile phone,phone,85.76,monthly,1,0,0
+O-00335,W-0189,Utilities,utilities,123.19,monthly,5,1,1
+O-00336,W-0128,Mobile phone,phone,76.17,monthly,1,0,1
+O-00337,W-0171,Car payment,debt_payment,259.95,monthly,15,1,1
+O-00338,W-0160,Childcare,childcare,467.96,monthly,1,1,1
+O-00339,W-0038,Streaming,entertainment,20.13,monthly,22,0,0
+O-00340,W-0149,Utilities,utilities,155.86,monthly,5,1,1
+O-00341,W-0210,Mobile phone,phone,55.38,monthly,1,0,1
+O-00342,W-0097,Childcare,childcare,1079.84,monthly,1,1,1
+O-00343,W-0035,Credit card min,debt_payment,109.03,monthly,20,0,1
+O-00344,W-0145,Internet,utilities,99.25,monthly,15,1,1
+O-00345,W-0145,Streaming,entertainment,16.71,monthly,22,1,0
+O-00346,W-0056,Car payment,debt_payment,307.41,monthly,15,0,1
+O-00347,W-0027,Storage unit,housing,139.82,monthly,10,1,1
+O-00348,W-0132,Car payment,debt_payment,280.36,monthly,15,0,1
+O-00349,W-0084,Utilities,utilities,157.38,monthly,5,0,1
+O-00350,W-0029,Storage unit,housing,60.56,monthly,10,0,0
+O-00351,W-0170,Childcare,childcare,1137.48,monthly,1,1,1
+O-00352,W-0017,Streaming,entertainment,23.74,monthly,22,0,1
+O-00353,W-0006,Credit card min,debt_payment,78.03,monthly,20,1,1
+O-00354,W-0065,Internet,utilities,114.08,monthly,15,0,1
+O-00355,W-0048,Storage unit,housing,117.63,monthly,10,1,0
+O-00356,W-0177,Rent,housing,1602.93,monthly,1,0,1
+O-00357,W-0076,Utilities,utilities,200.89,monthly,5,0,1
+O-00358,W-0162,Credit card min,debt_payment,49.82,monthly,20,0,1
+O-00359,W-0214,Car payment,debt_payment,486.5,monthly,15,1,1
+O-00360,W-0159,Utilities,utilities,111.51,monthly,5,0,1
+O-00361,W-0143,Credit card min,debt_payment,135.28,monthly,20,0,1
+O-00362,W-0017,Rent,housing,1679.98,monthly,1,1,1
+O-00363,W-0088,Rent,housing,2182.41,monthly,1,1,1
+O-00364,W-0100,Childcare,childcare,1000.07,monthly,1,0,1
+O-00365,W-0004,Storage unit,housing,65.38,monthly,10,1,0
+O-00366,W-0098,Utilities,utilities,111.41,monthly,5,1,1
+O-00367,W-0033,Utilities,utilities,90.1,monthly,5,1,1
+O-00368,W-0004,Internet,utilities,88.41,monthly,15,1,1
+O-00369,W-0036,Childcare,childcare,430.42,monthly,1,0,1
+O-00370,W-0055,Streaming,entertainment,21.71,monthly,22,0,0
+O-00371,W-0089,Utilities,utilities,137.59,monthly,5,1,1
+O-00372,W-0044,Streaming,entertainment,18.36,monthly,22,0,0
+O-00373,W-0125,Car payment,debt_payment,548.19,monthly,15,0,1
+O-00374,W-0059,Utilities,utilities,150.22,monthly,5,1,1
+O-00375,W-0175,Utilities,utilities,156.0,monthly,5,1,1
+O-00376,W-0036,Storage unit,housing,129.75,monthly,10,1,0
+O-00377,W-0025,Gym,entertainment,27.51,monthly,8,1,0
+O-00378,W-0181,Childcare,childcare,586.28,monthly,1,1,1
+O-00379,W-0074,Childcare,childcare,969.38,monthly,1,1,0
+O-00380,W-0064,Utilities,utilities,116.87,monthly,5,0,1
+O-00381,W-0070,Utilities,utilities,164.7,monthly,5,1,1
+O-00382,W-0154,Credit card min,debt_payment,37.41,monthly,20,0,1
+O-00383,W-0128,Gym,entertainment,44.66,monthly,8,1,0
+O-00384,W-0107,Gym,entertainment,22.9,monthly,8,1,1
+O-00385,W-0109,Credit card min,debt_payment,70.16,monthly,20,1,1
+O-00386,W-0128,Credit card min,debt_payment,88.81,monthly,20,0,1
+O-00387,W-0080,Streaming,entertainment,24.85,monthly,22,1,0
+O-00388,W-0102,Credit card min,debt_payment,118.28,monthly,20,0,1
+O-00389,W-0044,Gym,entertainment,43.78,monthly,8,0,1
+O-00390,W-0208,Streaming,entertainment,15.92,monthly,22,1,0
+O-00391,W-0078,Streaming,entertainment,22.68,monthly,22,1,1
+O-00392,W-0214,Storage unit,housing,90.21,monthly,10,0,1
+O-00393,W-0053,Utilities,utilities,145.52,monthly,5,0,1
+O-00394,W-0054,Streaming,entertainment,17.95,monthly,22,0,1
+O-00395,W-0110,Car payment,debt_payment,330.75,monthly,15,1,0
+O-00396,W-0190,Rent,housing,1338.62,monthly,1,0,1
+O-00397,W-0053,Credit card min,debt_payment,74.42,monthly,20,1,1
+O-00398,W-0094,Gym,entertainment,29.49,monthly,8,1,0
+O-00399,W-0174,Mobile phone,phone,65.01,monthly,1,1,1
+O-00400,W-0025,Car payment,debt_payment,294.48,monthly,15,0,1
+O-00401,W-0008,Internet,utilities,64.09,monthly,15,0,1
+O-00402,W-0146,Internet,utilities,108.34,monthly,15,1,1
+O-00403,W-0202,Utilities,utilities,197.3,monthly,5,1,1
+O-00404,W-0153,Gym,entertainment,33.05,monthly,8,0,0
+O-00405,W-0201,Childcare,childcare,742.77,monthly,1,1,1
+O-00406,W-0103,Streaming,entertainment,20.82,monthly,22,1,1
+O-00407,W-0172,Car payment,debt_payment,271.29,monthly,15,0,1
+O-00408,W-0096,Childcare,childcare,990.13,monthly,1,0,1
+O-00409,W-0041,Internet,utilities,117.11,monthly,15,0,1
+O-00410,W-0003,Streaming,entertainment,15.56,monthly,22,1,0
+O-00411,W-0040,Rent,housing,1377.71,monthly,1,0,1
+O-00412,W-0130,Utilities,utilities,145.98,monthly,5,0,1
+O-00413,W-0125,Storage unit,housing,131.07,monthly,10,0,1
+O-00414,W-0189,Streaming,entertainment,18.15,monthly,22,0,1
+O-00415,W-0191,Streaming,entertainment,22.59,monthly,22,1,0
+O-00416,W-0049,Utilities,utilities,113.32,monthly,5,0,1
+O-00417,W-0067,Rent,housing,1483.33,monthly,1,0,1
+O-00418,W-0170,Rent,housing,1426.4,monthly,1,0,1
+O-00419,W-0209,Internet,utilities,72.93,monthly,15,0,1
+O-00420,W-0117,Streaming,entertainment,10.25,monthly,22,0,0
+O-00421,W-0149,Mobile phone,phone,86.38,monthly,1,0,1
+O-00422,W-0073,Streaming,entertainment,13.58,monthly,22,1,0
+O-00423,W-0156,Mobile phone,phone,61.81,monthly,1,0,1
+O-00424,W-0137,Utilities,utilities,129.28,monthly,5,0,1
+O-00425,W-0144,Internet,utilities,114.71,monthly,15,1,1
+O-00426,W-0159,Mobile phone,phone,64.99,monthly,1,0,1
+O-00427,W-0123,Car payment,debt_payment,441.51,monthly,15,0,1
+O-00428,W-0051,Streaming,entertainment,14.74,monthly,22,0,1
+O-00429,W-0174,Rent,housing,2120.87,monthly,1,0,1
+O-00430,W-0081,Car payment,debt_payment,316.45,monthly,15,1,1
+O-00431,W-0010,Car payment,debt_payment,509.93,monthly,15,0,1
+O-00432,W-0188,Mobile phone,phone,40.63,monthly,1,1,1
+O-00433,W-0052,Gym,entertainment,36.24,monthly,8,0,0
+O-00434,W-0100,Gym,entertainment,26.2,monthly,8,0,0
+O-00435,W-0038,Gym,entertainment,28.5,monthly,8,0,1
+O-00436,W-0071,Car payment,debt_payment,502.76,monthly,15,1,1
+O-00437,W-0146,Rent,housing,937.28,monthly,1,1,1
+O-00438,W-0204,Car payment,debt_payment,290.9,monthly,15,1,1
+O-00439,W-0178,Storage unit,housing,78.63,monthly,10,1,0
+O-00440,W-0028,Storage unit,housing,127.94,monthly,10,1,0
+O-00441,W-0006,Car payment,debt_payment,358.8,monthly,15,1,1
+O-00442,W-0121,Gym,entertainment,39.68,monthly,8,1,0
+O-00443,W-0196,Streaming,entertainment,11.15,monthly,22,1,1
+O-00444,W-0123,Rent,housing,1060.73,monthly,1,0,1
+O-00445,W-0102,Utilities,utilities,198.76,monthly,5,0,0
+O-00446,W-0042,Streaming,entertainment,12.63,monthly,22,0,1
+O-00447,W-0092,Rent,housing,2115.55,monthly,1,0,1
+O-00448,W-0157,Storage unit,housing,116.64,monthly,10,0,0
+O-00449,W-0114,Mobile phone,phone,79.69,monthly,1,1,1
+O-00450,W-0051,Utilities,utilities,131.17,monthly,5,0,1
+O-00451,W-0066,Utilities,utilities,135.0,monthly,5,1,1
+O-00452,W-0167,Storage unit,housing,89.34,monthly,10,0,0
+O-00453,W-0126,Mobile phone,phone,62.22,monthly,1,0,1
+O-00454,W-0167,Credit card min,debt_payment,136.58,monthly,20,0,1
+O-00455,W-0060,Childcare,childcare,950.34,monthly,1,0,1
+O-00456,W-0018,Internet,utilities,85.61,monthly,15,1,1
+O-00457,W-0093,Gym,entertainment,42.81,monthly,8,0,0
+O-00458,W-0180,Streaming,entertainment,20.67,monthly,22,1,1
+O-00459,W-0024,Car payment,debt_payment,490.51,monthly,15,0,1
+O-00460,W-0035,Mobile phone,phone,86.33,monthly,1,0,1
+O-00461,W-0163,Internet,utilities,94.7,monthly,15,0,1
+O-00462,W-0019,Rent,housing,1725.99,monthly,1,1,1
+O-00463,W-0065,Rent,housing,1583.15,monthly,1,0,1
+O-00464,W-0016,Car payment,debt_payment,530.06,monthly,15,1,1
+O-00465,W-0156,Car payment,debt_payment,402.54,monthly,15,1,1
+O-00466,W-0009,Childcare,childcare,503.13,monthly,1,1,1
+O-00467,W-0073,Car payment,debt_payment,274.42,monthly,15,1,1
+O-00468,W-0008,Storage unit,housing,138.8,monthly,10,1,1
+O-00469,W-0110,Internet,utilities,93.99,monthly,15,0,1
+O-00470,W-0147,Internet,utilities,106.58,monthly,15,1,1
+O-00471,W-0202,Streaming,entertainment,20.97,monthly,22,1,0
+O-00472,W-0051,Childcare,childcare,1173.26,monthly,1,1,1
+O-00473,W-0072,Car payment,debt_payment,343.29,monthly,15,0,1
+O-00474,W-0135,Car payment,debt_payment,499.63,monthly,15,0,1
+O-00475,W-0215,Credit card min,debt_payment,121.22,monthly,20,0,1
+O-00476,W-0122,Car payment,debt_payment,267.62,monthly,15,0,1
+O-00477,W-0095,Rent,housing,1920.13,monthly,1,0,1
+O-00478,W-0098,Childcare,childcare,817.99,monthly,1,0,1
+O-00479,W-0134,Childcare,childcare,920.43,monthly,1,1,1
+O-00480,W-0154,Childcare,childcare,983.4,monthly,1,1,1
+O-00481,W-0014,Rent,housing,1574.18,monthly,1,1,1
+O-00482,W-0198,Streaming,entertainment,17.86,monthly,22,0,1
+O-00483,W-0041,Credit card min,debt_payment,84.42,monthly,20,0,1
+O-00484,W-0109,Childcare,childcare,550.17,monthly,1,1,1
+O-00485,W-0045,Childcare,childcare,1007.92,monthly,1,0,1
+O-00486,W-0007,Storage unit,housing,81.19,monthly,10,1,0
+O-00487,W-0219,Credit card min,debt_payment,102.32,monthly,20,0,1
+O-00488,W-0097,Credit card min,debt_payment,95.84,monthly,20,0,1
+O-00489,W-0042,Car payment,debt_payment,359.48,monthly,15,1,1
+O-00490,W-0005,Streaming,entertainment,22.1,monthly,22,0,0
+O-00491,W-0076,Streaming,entertainment,22.2,monthly,22,1,1
+O-00492,W-0119,Gym,entertainment,20.42,monthly,8,1,1
+O-00493,W-0130,Childcare,childcare,1161.85,monthly,1,1,1
+O-00494,W-0211,Streaming,entertainment,17.88,monthly,22,1,1
+O-00495,W-0217,Gym,entertainment,39.24,monthly,8,0,1
+O-00496,W-0218,Mobile phone,phone,49.25,monthly,1,1,1
+O-00497,W-0176,Credit card min,debt_payment,65.89,monthly,20,0,1
+O-00498,W-0045,Credit card min,debt_payment,73.13,monthly,20,0,1
+O-00499,W-0104,Credit card min,debt_payment,55.1,monthly,20,1,1
+O-00500,W-0150,Streaming,entertainment,11.28,monthly,22,0,0
+O-00501,W-0063,Internet,utilities,61.64,monthly,15,0,1
+O-00502,W-0207,Mobile phone,phone,57.47,monthly,1,0,1
+O-00503,W-0059,Car payment,debt_payment,498.79,monthly,15,0,1
+O-00504,W-0151,Credit card min,debt_payment,41.5,monthly,20,0,1
+O-00505,W-0151,Car payment,debt_payment,527.74,monthly,15,1,1
+O-00506,W-0020,Childcare,childcare,1026.74,monthly,1,1,1
+O-00507,W-0171,Rent,housing,945.76,monthly,1,0,1
+O-00508,W-0083,Utilities,utilities,101.44,monthly,5,0,1
+O-00509,W-0191,Credit card min,debt_payment,131.97,monthly,20,0,1
+O-00510,W-0044,Car payment,debt_payment,515.78,monthly,15,1,1
+O-00511,W-0018,Childcare,childcare,884.66,monthly,1,0,1
+O-00512,W-0175,Internet,utilities,80.45,monthly,15,1,1
+O-00513,W-0191,Internet,utilities,76.5,monthly,15,0,1
+O-00514,W-0185,Storage unit,housing,82.9,monthly,10,1,1
+O-00515,W-0077,Utilities,utilities,88.1,monthly,5,1,1
+O-00516,W-0068,Car payment,debt_payment,261.86,monthly,15,0,1
+O-00517,W-0042,Storage unit,housing,94.55,monthly,10,0,1
+O-00518,W-0192,Storage unit,housing,118.55,monthly,10,1,1
+O-00519,W-0214,Internet,utilities,93.81,monthly,15,1,1
+O-00520,W-0025,Credit card min,debt_payment,43.6,monthly,20,0,1
+O-00521,W-0087,Internet,utilities,112.28,monthly,15,0,1
+O-00522,W-0128,Childcare,childcare,536.19,monthly,1,0,1
+O-00523,W-0139,Childcare,childcare,1135.57,monthly,1,0,1
+O-00524,W-0199,Childcare,childcare,729.35,monthly,1,0,1
+O-00525,W-0167,Car payment,debt_payment,408.13,monthly,15,0,1
+O-00526,W-0148,Internet,utilities,67.46,monthly,15,0,1
+O-00527,W-0101,Gym,entertainment,25.57,monthly,8,1,1
+O-00528,W-0136,Internet,utilities,73.3,monthly,15,0,1
+O-00529,W-0133,Utilities,utilities,156.39,monthly,5,0,1
+O-00530,W-0011,Gym,entertainment,20.93,monthly,8,0,0
+O-00531,W-0038,Mobile phone,phone,72.33,monthly,1,0,1
+O-00532,W-0170,Credit card min,debt_payment,121.38,monthly,20,1,1
+O-00533,W-0163,Childcare,childcare,559.17,monthly,1,0,1
+O-00534,W-0109,Rent,housing,1646.25,monthly,1,0,1
+O-00535,W-0218,Credit card min,debt_payment,130.4,monthly,20,1,1
+O-00536,W-0092,Storage unit,housing,124.49,monthly,10,1,0
+O-00537,W-0095,Gym,entertainment,42.99,monthly,8,1,0
+O-00538,W-0057,Gym,entertainment,24.71,monthly,8,0,1
+O-00539,W-0095,Internet,utilities,110.38,monthly,15,0,1
+O-00540,W-0122,Rent,housing,1766.65,monthly,1,0,1
+O-00541,W-0182,Credit card min,debt_payment,45.82,monthly,20,0,1
+O-00542,W-0164,Childcare,childcare,1149.26,monthly,1,1,1
+O-00543,W-0085,Storage unit,housing,139.11,monthly,10,1,1
+O-00544,W-0142,Credit card min,debt_payment,93.9,monthly,20,1,1
+O-00545,W-0114,Storage unit,housing,132.84,monthly,10,1,0
+O-00546,W-0041,Mobile phone,phone,94.64,monthly,1,0,1
+O-00547,W-0056,Rent,housing,1357.2,monthly,1,1,1
+O-00548,W-0141,Rent,housing,1473.59,monthly,1,0,1
+O-00549,W-0179,Credit card min,debt_payment,58.01,monthly,20,0,1
+O-00550,W-0184,Streaming,entertainment,19.84,monthly,22,0,0
+O-00551,W-0099,Rent,housing,1389.21,monthly,1,1,1
+O-00552,W-0047,Storage unit,housing,67.64,monthly,10,0,0
+O-00553,W-0210,Storage unit,housing,123.25,monthly,10,1,0
+O-00554,W-0022,Gym,entertainment,28.34,monthly,8,0,1
+O-00555,W-0130,Storage unit,housing,114.53,monthly,10,1,1
+O-00556,W-0042,Rent,housing,1236.36,monthly,1,1,1
+O-00557,W-0127,Gym,entertainment,29.18,monthly,8,0,1
+O-00558,W-0165,Mobile phone,phone,81.58,monthly,1,0,1
+O-00559,W-0002,Streaming,entertainment,12.97,monthly,22,1,0
+O-00560,W-0037,Utilities,utilities,82.67,monthly,5,1,1
+O-00561,W-0171,Mobile phone,phone,69.28,monthly,1,0,1
+O-00562,W-0131,Childcare,childcare,596.51,monthly,1,0,0
+O-00563,W-0193,Storage unit,housing,90.95,monthly,10,0,1
+O-00564,W-0193,Credit card min,debt_payment,44.64,monthly,20,1,1
+O-00565,W-0032,Childcare,childcare,500.64,monthly,1,0,1
+O-00566,W-0095,Car payment,debt_payment,284.69,monthly,15,0,1
+O-00567,W-0107,Credit card min,debt_payment,96.22,monthly,20,0,1
+O-00568,W-0005,Gym,entertainment,35.65,monthly,8,0,1
+O-00569,W-0215,Gym,entertainment,33.14,monthly,8,1,0
+O-00570,W-0045,Car payment,debt_payment,335.41,monthly,15,1,1
+O-00571,W-0036,Car payment,debt_payment,470.12,monthly,15,0,1
+O-00572,W-0099,Utilities,utilities,171.13,monthly,5,0,1
+O-00573,W-0063,Rent,housing,1759.04,monthly,1,1,1
+O-00574,W-0023,Credit card min,debt_payment,92.14,monthly,20,0,1
+O-00575,W-0064,Rent,housing,1419.43,monthly,1,1,1
+O-00576,W-0129,Rent,housing,1946.74,monthly,1,0,1
+O-00577,W-0015,Mobile phone,phone,61.95,monthly,1,1,1
+O-00578,W-0131,Car payment,debt_payment,504.84,monthly,15,0,1
+O-00579,W-0005,Car payment,debt_payment,399.57,monthly,15,0,1
+O-00580,W-0089,Storage unit,housing,137.2,monthly,10,0,1
+O-00581,W-0175,Streaming,entertainment,11.07,monthly,22,0,0
+O-00582,W-0187,Credit card min,debt_payment,36.25,monthly,20,0,1
+O-00583,W-0082,Credit card min,debt_payment,98.61,monthly,20,0,1
+O-00584,W-0201,Credit card min,debt_payment,147.14,monthly,20,1,1
+O-00585,W-0049,Car payment,debt_payment,430.5,monthly,15,0,1
+O-00586,W-0019,Streaming,entertainment,12.4,monthly,22,1,0
+O-00587,W-0152,Rent,housing,1097.58,monthly,1,1,1
+O-00588,W-0092,Car payment,debt_payment,520.65,monthly,15,0,1
+O-00589,W-0217,Utilities,utilities,170.72,monthly,5,0,1
+O-00590,W-0195,Utilities,utilities,139.29,monthly,5,1,1
+O-00591,W-0021,Internet,utilities,84.75,monthly,15,0,1
+O-00592,W-0150,Childcare,childcare,440.03,monthly,1,1,1
+O-00593,W-0111,Childcare,childcare,904.07,monthly,1,0,1
+O-00594,W-0126,Utilities,utilities,192.86,monthly,5,0,1
+O-00595,W-0112,Rent,housing,1465.35,monthly,1,0,1
+O-00596,W-0198,Mobile phone,phone,66.12,monthly,1,0,1
+O-00597,W-0058,Childcare,childcare,668.67,monthly,1,0,1
+O-00598,W-0161,Car payment,debt_payment,476.0,monthly,15,1,1
+O-00599,W-0191,Gym,entertainment,36.56,monthly,8,0,1
+O-00600,W-0181,Utilities,utilities,201.74,monthly,5,0,1
+O-00601,W-0031,Childcare,childcare,840.06,monthly,1,1,1
+O-00602,W-0010,Rent,housing,1644.88,monthly,1,0,1
+O-00603,W-0034,Childcare,childcare,872.57,monthly,1,1,1
+O-00604,W-0087,Childcare,childcare,999.98,monthly,1,1,1
+O-00605,W-0025,Utilities,utilities,132.8,monthly,5,1,1
+O-00606,W-0004,Credit card min,debt_payment,55.97,monthly,20,0,1
+O-00607,W-0047,Utilities,utilities,86.79,monthly,5,1,1
+O-00608,W-0113,Childcare,childcare,981.71,monthly,1,0,1
+O-00609,W-0176,Utilities,utilities,129.53,monthly,5,1,1
+O-00610,W-0082,Rent,housing,1199.6,monthly,1,1,1
+O-00611,W-0113,Internet,utilities,61.13,monthly,15,1,1
+O-00612,W-0196,Childcare,childcare,905.76,monthly,1,0,1
+O-00613,W-0217,Childcare,childcare,448.53,monthly,1,0,1
+O-00614,W-0166,Mobile phone,phone,58.04,monthly,1,0,1
+O-00615,W-0043,Gym,entertainment,40.0,monthly,8,0,1
+O-00616,W-0108,Car payment,debt_payment,398.77,monthly,15,0,1
+O-00617,W-0168,Utilities,utilities,201.47,monthly,5,0,1
+O-00618,W-0162,Streaming,entertainment,13.84,monthly,22,0,1
+O-00619,W-0204,Storage unit,housing,84.71,monthly,10,0,0
+O-00620,W-0108,Mobile phone,phone,55.44,monthly,1,0,1
+O-00621,W-0030,Mobile phone,phone,64.58,monthly,1,1,1
+O-00622,W-0190,Gym,entertainment,40.41,monthly,8,0,1
+O-00623,W-0064,Gym,entertainment,35.94,monthly,8,0,1
+O-00624,W-0027,Streaming,entertainment,24.07,monthly,22,1,1
+O-00625,W-0027,Utilities,utilities,190.18,monthly,5,1,1
+O-00626,W-0035,Streaming,entertainment,18.81,monthly,22,1,1
+O-00627,W-0177,Mobile phone,phone,63.82,monthly,1,1,1
+O-00628,W-0127,Streaming,entertainment,10.97,monthly,22,1,1
+O-00629,W-0015,Credit card min,debt_payment,131.1,monthly,20,0,1
+O-00630,W-0098,Gym,entertainment,41.26,monthly,8,0,1
+O-00631,W-0139,Storage unit,housing,97.11,monthly,10,0,0
+O-00632,W-0219,Internet,utilities,64.18,monthly,15,1,1
+O-00633,W-0163,Utilities,utilities,126.81,monthly,5,1,1
+O-00634,W-0017,Credit card min,debt_payment,122.06,monthly,20,0,1
+O-00635,W-0066,Storage unit,housing,126.61,monthly,10,1,0
+O-00636,W-0024,Credit card min,debt_payment,93.39,monthly,20,1,1
+O-00637,W-0136,Childcare,childcare,648.94,monthly,1,0,1
+O-00638,W-0188,Utilities,utilities,207.25,monthly,5,1,1
+O-00639,W-0212,Utilities,utilities,115.02,monthly,5,1,1
+O-00640,W-0121,Credit card min,debt_payment,106.44,monthly,20,1,1
+O-00641,W-0014,Gym,entertainment,22.0,monthly,8,0,1
+O-00642,W-0161,Rent,housing,1648.49,monthly,1,1,1
+O-00643,W-0118,Gym,entertainment,39.01,monthly,8,1,1
+O-00644,W-0067,Utilities,utilities,118.67,monthly,5,0,1
+O-00645,W-0032,Rent,housing,1148.55,monthly,1,0,1
+O-00646,W-0187,Car payment,debt_payment,545.1,monthly,15,0,1
+O-00647,W-0050,Storage unit,housing,118.28,monthly,10,0,0
+O-00648,W-0106,Gym,entertainment,22.56,monthly,8,1,0
+O-00649,W-0166,Utilities,utilities,204.09,monthly,5,0,1
+O-00650,W-0081,Internet,utilities,100.49,monthly,15,0,1
+O-00651,W-0075,Credit card min,debt_payment,87.66,monthly,20,0,1
+O-00652,W-0046,Gym,entertainment,32.57,monthly,8,0,1
+O-00653,W-0212,Streaming,entertainment,21.2,monthly,22,1,1
+O-00654,W-0064,Mobile phone,phone,83.03,monthly,1,1,1
+O-00655,W-0168,Storage unit,housing,135.95,monthly,10,0,0
+O-00656,W-0213,Internet,utilities,60.4,monthly,15,1,1
+O-00657,W-0181,Rent,housing,1579.04,monthly,1,1,1
+O-00658,W-0024,Gym,entertainment,38.29,monthly,8,0,1
+O-00659,W-0206,Credit card min,debt_payment,85.24,monthly,20,0,1
+O-00660,W-0075,Childcare,childcare,762.2,monthly,1,0,1
+O-00661,W-0086,Credit card min,debt_payment,42.99,monthly,20,1,1
+O-00662,W-0005,Rent,housing,1918.42,monthly,1,0,1
+O-00663,W-0115,Childcare,childcare,630.73,monthly,1,0,1
+O-00664,W-0116,Utilities,utilities,163.05,monthly,5,0,1
+O-00665,W-0040,Internet,utilities,60.07,monthly,15,0,1
+O-00666,W-0176,Gym,entertainment,29.24,monthly,8,0,1
+O-00667,W-0156,Gym,entertainment,28.76,monthly,8,1,0
+O-00668,W-0148,Streaming,entertainment,11.53,monthly,22,1,1
+O-00669,W-0022,Mobile phone,phone,59.54,monthly,1,0,1
+O-00670,W-0202,Gym,entertainment,23.81,monthly,8,0,0
+O-00671,W-0118,Childcare,childcare,956.6,monthly,1,1,1
+O-00672,W-0155,Storage unit,housing,120.25,monthly,10,1,1
+O-00673,W-0086,Rent,housing,1835.67,monthly,1,0,1
+O-00674,W-0034,Utilities,utilities,196.81,monthly,5,1,1
+O-00675,W-0111,Car payment,debt_payment,525.17,monthly,15,1,1
+O-00676,W-0095,Utilities,utilities,103.08,monthly,5,0,1
+O-00677,W-0015,Internet,utilities,65.79,monthly,15,0,1
+O-00678,W-0118,Storage unit,housing,137.31,monthly,10,1,0
+O-00679,W-0056,Storage unit,housing,88.55,monthly,10,1,1
+O-00680,W-0090,Storage unit,housing,94.32,monthly,10,1,0
+O-00681,W-0044,Childcare,childcare,643.8,monthly,1,1,1
+O-00682,W-0084,Storage unit,housing,81.58,monthly,10,0,1
+O-00683,W-0219,Gym,entertainment,22.55,monthly,8,0,0
+O-00684,W-0160,Utilities,utilities,133.88,monthly,5,0,1
+O-00685,W-0009,Rent,housing,1449.96,monthly,1,1,1
+O-00686,W-0050,Streaming,entertainment,16.88,monthly,22,1,0
+O-00687,W-0099,Internet,utilities,114.34,monthly,15,1,1
+O-00688,W-0073,Mobile phone,phone,91.77,monthly,1,0,1
+O-00689,W-0094,Mobile phone,phone,65.82,monthly,1,0,1
+O-00690,W-0169,Mobile phone,phone,86.82,monthly,1,1,1
+O-00691,W-0144,Car payment,debt_payment,438.71,monthly,15,1,1
+O-00692,W-0075,Internet,utilities,86.24,monthly,15,0,1
+O-00693,W-0190,Utilities,utilities,159.93,monthly,5,1,1
+O-00694,W-0037,Internet,utilities,67.08,monthly,15,1,1
+O-00695,W-0194,Internet,utilities,72.21,monthly,15,1,1
+O-00696,W-0140,Storage unit,housing,71.76,monthly,10,1,0
+O-00697,W-0204,Internet,utilities,93.29,monthly,15,0,1
+O-00698,W-0188,Rent,housing,991.92,monthly,1,0,1
+O-00699,W-0105,Streaming,entertainment,13.27,monthly,22,1,0
+O-00700,W-0163,Gym,entertainment,37.48,monthly,8,0,0
+O-00701,W-0007,Credit card min,debt_payment,141.66,monthly,20,1,1
+O-00702,W-0079,Gym,entertainment,25.52,monthly,8,0,1
+O-00703,W-0194,Rent,housing,1809.79,monthly,1,0,1
+O-00704,W-0016,Rent,housing,1019.04,monthly,1,1,1
+O-00705,W-0042,Internet,utilities,112.25,monthly,15,0,1
+O-00706,W-0176,Childcare,childcare,585.31,monthly,1,1,1
+O-00707,W-0016,Storage unit,housing,70.14,monthly,10,1,1
+O-00708,W-0017,Car payment,debt_payment,344.26,monthly,15,1,1
+O-00709,W-0104,Internet,utilities,86.87,monthly,15,0,1
+O-00710,W-0090,Car payment,debt_payment,464.55,monthly,15,0,1
+O-00711,W-0101,Car payment,debt_payment,292.91,monthly,15,1,0
+O-00712,W-0088,Gym,entertainment,37.76,monthly,8,0,0
+O-00713,W-0108,Internet,utilities,67.89,monthly,15,0,1
+O-00714,W-0022,Utilities,utilities,160.46,monthly,5,0,1
+O-00715,W-0006,Rent,housing,1208.84,monthly,1,1,1
+O-00716,W-0046,Credit card min,debt_payment,81.67,monthly,20,1,1
+O-00717,W-0104,Gym,entertainment,33.68,monthly,8,1,1
+O-00718,W-0206,Mobile phone,phone,47.12,monthly,1,0,1
+O-00719,W-0085,Utilities,utilities,137.85,monthly,5,1,1
+O-00720,W-0219,Utilities,utilities,212.89,monthly,5,1,1
+O-00721,W-0165,Rent,housing,1815.35,monthly,1,0,1
+O-00722,W-0029,Gym,entertainment,36.44,monthly,8,1,1
+O-00723,W-0193,Internet,utilities,60.66,monthly,15,0,1
+O-00724,W-0023,Gym,entertainment,23.47,monthly,8,0,1
+O-00725,W-0148,Credit card min,debt_payment,101.72,monthly,20,0,1
+O-00726,W-0111,Internet,utilities,103.83,monthly,15,0,1
+O-00727,W-0199,Storage unit,housing,68.69,monthly,10,1,0
+O-00728,W-0152,Utilities,utilities,181.93,monthly,5,0,1
+O-00729,W-0179,Internet,utilities,65.28,monthly,15,0,1
+O-00730,W-0116,Car payment,debt_payment,279.5,monthly,15,0,1
+O-00731,W-0039,Childcare,childcare,826.11,monthly,1,0,1
+O-00732,W-0020,Internet,utilities,69.9,monthly,15,0,1
+O-00733,W-0050,Gym,entertainment,37.21,monthly,8,1,0
+O-00734,W-0052,Internet,utilities,105.86,monthly,15,1,1
+O-00735,W-0186,Utilities,utilities,115.0,monthly,5,1,1
+O-00736,W-0094,Credit card min,debt_payment,66.4,monthly,20,0,1
+O-00737,W-0113,Rent,housing,1298.93,monthly,1,0,1
+O-00738,W-0005,Utilities,utilities,124.8,monthly,5,1,1
+O-00739,W-0032,Gym,entertainment,42.4,monthly,8,0,0
+O-00740,W-0140,Mobile phone,phone,50.24,monthly,1,0,0
+O-00741,W-0089,Internet,utilities,93.27,monthly,15,1,1
+O-00742,W-0195,Childcare,childcare,1116.45,monthly,1,0,1
+O-00743,W-0010,Mobile phone,phone,80.17,monthly,1,0,1
+O-00744,W-0055,Gym,entertainment,36.47,monthly,8,0,1
+O-00745,W-0046,Streaming,entertainment,22.25,monthly,22,1,1
+O-00746,W-0133,Rent,housing,2141.54,monthly,1,1,1
+O-00747,W-0117,Childcare,childcare,1097.55,monthly,1,1,1
+O-00748,W-0006,Internet,utilities,96.43,monthly,15,0,1
+O-00749,W-0018,Utilities,utilities,148.01,monthly,5,1,1
+O-00750,W-0220,Childcare,childcare,967.15,monthly,1,0,1
+O-00751,W-0205,Gym,entertainment,32.21,monthly,8,1,0
+O-00752,W-0031,Streaming,entertainment,23.02,monthly,22,1,0
+O-00753,W-0138,Internet,utilities,94.98,monthly,15,0,1
+O-00754,W-0011,Storage unit,housing,73.2,monthly,10,0,1
+O-00755,W-0003,Gym,entertainment,25.92,monthly,8,1,0
+O-00756,W-0123,Streaming,entertainment,13.69,monthly,22,1,1
+O-00757,W-0053,Internet,utilities,77.01,monthly,15,0,1
+O-00758,W-0124,Streaming,entertainment,20.52,monthly,22,0,1
+O-00759,W-0056,Internet,utilities,108.91,monthly,15,1,1
+O-00760,W-0033,Childcare,childcare,903.7,monthly,1,0,1
+O-00761,W-0043,Internet,utilities,75.23,monthly,15,1,1
+O-00762,W-0156,Streaming,entertainment,15.5,monthly,22,1,1
+O-00763,W-0213,Gym,entertainment,41.07,monthly,8,1,1
+O-00764,W-0118,Car payment,debt_payment,459.66,monthly,15,0,1
+O-00765,W-0154,Rent,housing,1241.62,monthly,1,0,1
+O-00766,W-0028,Childcare,childcare,674.88,monthly,1,0,1
+O-00767,W-0026,Storage unit,housing,89.96,monthly,10,0,1
+O-00768,W-0055,Rent,housing,2116.11,monthly,1,0,1
+O-00769,W-0091,Utilities,utilities,172.94,monthly,5,0,1
+O-00770,W-0082,Utilities,utilities,188.02,monthly,5,0,1
+O-00771,W-0045,Gym,entertainment,29.43,monthly,8,0,0
+O-00772,W-0072,Rent,housing,1131.31,monthly,1,1,1
+O-00773,W-0014,Streaming,entertainment,11.92,monthly,22,1,0
+O-00774,W-0052,Credit card min,debt_payment,59.11,monthly,20,0,1
+O-00775,W-0020,Utilities,utilities,116.16,monthly,5,1,1
+O-00776,W-0057,Storage unit,housing,76.29,monthly,10,0,0
+O-00777,W-0072,Mobile phone,phone,85.94,monthly,1,0,1
+O-00778,W-0131,Internet,utilities,118.25,monthly,15,1,1
+O-00779,W-0186,Childcare,childcare,1062.82,monthly,1,1,1
+O-00780,W-0119,Rent,housing,2133.8,monthly,1,0,1
+O-00781,W-0062,Utilities,utilities,169.73,monthly,5,0,1
+O-00782,W-0026,Car payment,debt_payment,317.88,monthly,15,1,1
+O-00783,W-0101,Credit card min,debt_payment,106.06,monthly,20,1,1
+O-00784,W-0049,Mobile phone,phone,53.78,monthly,1,0,1
+O-00785,W-0086,Utilities,utilities,175.44,monthly,5,0,1
+O-00786,W-0049,Gym,entertainment,40.13,monthly,8,1,0
+O-00787,W-0020,Credit card min,debt_payment,145.46,monthly,20,0,1
+O-00788,W-0186,Car payment,debt_payment,496.01,monthly,15,0,1
+O-00789,W-0197,Storage unit,housing,139.03,monthly,10,1,1
+O-00790,W-0203,Gym,entertainment,36.58,monthly,8,0,0
+O-00791,W-0192,Gym,entertainment,29.73,monthly,8,0,1
+O-00792,W-0041,Car payment,debt_payment,411.88,monthly,15,1,1
+O-00793,W-0131,Utilities,utilities,165.01,monthly,5,0,1
+O-00794,W-0136,Rent,housing,1838.48,monthly,1,0,1
+O-00795,W-0021,Gym,entertainment,25.31,monthly,8,1,1
+O-00796,W-0123,Utilities,utilities,117.67,monthly,5,0,1
+O-00797,W-0087,Credit card min,debt_payment,81.0,monthly,20,0,1
+O-00798,W-0147,Car payment,debt_payment,256.7,monthly,15,0,1
+O-00799,W-0182,Storage unit,housing,135.0,monthly,10,1,1
+O-00800,W-0010,Streaming,entertainment,21.2,monthly,22,1,1
+O-00801,W-0156,Internet,utilities,114.2,monthly,15,1,1
+O-00802,W-0158,Utilities,utilities,192.01,monthly,5,0,1
+O-00803,W-0142,Car payment,debt_payment,366.74,monthly,15,0,1
+O-00804,W-0053,Gym,entertainment,20.95,monthly,8,1,0
+O-00805,W-0041,Gym,entertainment,39.04,monthly,8,0,0
+O-00806,W-0044,Internet,utilities,95.59,monthly,15,0,1
+O-00807,W-0211,Credit card min,debt_payment,65.08,monthly,20,1,1
+O-00808,W-0071,Storage unit,housing,79.09,monthly,10,1,1
+O-00809,W-0060,Gym,entertainment,34.65,monthly,8,0,0
+O-00810,W-0157,Internet,utilities,60.98,monthly,15,0,1
+O-00811,W-0134,Utilities,utilities,170.19,monthly,5,1,1
+O-00812,W-0089,Transit pass,utilities,96.03,biweekly,11,1,1
+O-00813,W-0010,Insurance premium,utilities,83.56,biweekly,11,1,1
+O-00814,W-0045,Support payment,debt_payment,152.54,biweekly,23,0,0
+O-00815,W-0009,Support payment,debt_payment,245.52,biweekly,18,1,0
+O-00816,W-0133,Transit pass,utilities,105.54,biweekly,13,0,1
+O-00817,W-0125,Payday loan installment,debt_payment,177.65,biweekly,19,0,1
+O-00818,W-0219,Payday loan installment,debt_payment,144.84,biweekly,27,1,1
+O-00819,W-0007,Payday loan installment,debt_payment,164.06,biweekly,17,0,1
+O-00820,W-0012,Payday loan installment,debt_payment,194.43,biweekly,24,0,1
+O-00821,W-0142,Insurance premium,utilities,99.07,biweekly,28,1,1
+O-00822,W-0110,Insurance premium,utilities,81.74,biweekly,19,0,0
+O-00823,W-0051,Support payment,debt_payment,330.36,biweekly,22,1,1
+O-00824,W-0094,Payday loan installment,debt_payment,147.58,biweekly,24,1,1
+O-00825,W-0078,Support payment,debt_payment,270.63,biweekly,2,1,0
+O-00826,W-0156,Transit pass,utilities,105.54,biweekly,16,1,1
+O-00827,W-0165,Transit pass,utilities,113.12,biweekly,21,0,1
+O-00828,W-0086,Support payment,debt_payment,333.09,biweekly,18,1,1
+O-00829,W-0047,Insurance premium,utilities,53.78,biweekly,15,1,1
+O-00830,W-0106,Support payment,debt_payment,191.7,biweekly,25,0,1
+O-00831,W-0024,Insurance premium,utilities,40.4,biweekly,28,0,1
+O-00832,W-0113,Transit pass,utilities,52.42,biweekly,12,0,1
+O-00833,W-0104,Payday loan installment,debt_payment,101.23,biweekly,24,1,1
+O-00834,W-0208,Payday loan installment,debt_payment,103.66,biweekly,28,0,1
+O-00835,W-0183,Payday loan installment,debt_payment,198.09,biweekly,11,0,1
+O-00836,W-0210,Support payment,debt_payment,391.41,biweekly,21,1,1
+O-00837,W-0161,Insurance premium,utilities,65.86,biweekly,9,0,1
+O-00838,W-0002,Support payment,debt_payment,327.81,biweekly,26,1,1
+O-00839,W-0103,Payday loan installment,debt_payment,167.14,biweekly,14,0,1
+O-00840,W-0205,Support payment,debt_payment,154.95,biweekly,27,0,1
+O-00841,W-0035,Support payment,debt_payment,228.25,biweekly,11,1,1
+O-00842,W-0128,Payday loan installment,debt_payment,170.45,biweekly,21,0,1
+O-00843,W-0177,Support payment,debt_payment,197.4,biweekly,17,1,1
+O-00844,W-0202,Payday loan installment,debt_payment,80.35,biweekly,8,0,1
+O-00845,W-0136,Insurance premium,utilities,64.95,biweekly,9,0,1
+O-00846,W-0048,Insurance premium,utilities,75.83,biweekly,12,1,1
+O-00847,W-0067,Payday loan installment,debt_payment,172.52,biweekly,14,0,1
+O-00848,W-0198,Transit pass,utilities,86.49,biweekly,15,1,1
+O-00849,W-0108,Insurance premium,utilities,52.76,biweekly,27,1,1

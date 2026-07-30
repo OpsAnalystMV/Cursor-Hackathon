@@ -1,0 +1,19 @@
+---
+description: Hard constraints for Pace — never violate these
+globs:
+alwaysApply: true
+---
+
+# Pace hard constraints
+
+- Never read `buffer_days_estimate`. It is corrupt.
+- Never forecast from a mean. Use `floorDayNet` (p20).
+- Never display a raw account balance in the user-facing UI.
+- Never express a cost as an APR in the UI. Work-minutes or dollars only.
+- Never use the advances table as a model input — it is the evaluation target.
+- Exclude `status='cancelled'` advances everywhere.
+- Round every displayed number. Currency to whole dollars above $10, two decimals below.
+- If a computation lacks enough history, return `null` and render an explicit empty state. Do not substitute a default and carry on silently.
+- Handle both `monthly` and `biweekly` frequencies on `recurring_obligations`. A naive `due_day_of_month` match silently drops the 38 biweekly rows.
+- Do not start a build phase before the previous one passes. Phase order is seed → math+tests → backtest → screens.
+- Never show a raw balance. Show what is committed, what is free, and whether today cleared its share.
