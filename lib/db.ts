@@ -6,7 +6,7 @@ import fs from "node:fs";
 import path from "node:path";
 import Database from "better-sqlite3";
 
-const ROOT = path.resolve(__dirname, "..");
+const ROOT = process.cwd();
 const DB_PATH = path.join(ROOT, "data", "pace.db");
 
 export type WorkerRow = {

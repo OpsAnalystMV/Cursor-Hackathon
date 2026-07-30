@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "seed": "tsx scripts/seed.ts",
+    "holdout": "tsx scripts/holdout.ts",
     "test": "vitest run",
     "test:watch": "vitest"
   },
@@ -16,7 +17,8 @@
     "csv-parse": "^7.0.1",
     "next": "15.5.22",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
